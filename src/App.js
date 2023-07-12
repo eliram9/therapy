@@ -1,7 +1,11 @@
+import React from 'react'
+
+import Navbar from './components/Navbar/Navbar'
+
 function App() {
     return (
         <div>
-            <p className="text-green-800">Generations</p>
+            <Navbar />
         </div>
     );
 }
