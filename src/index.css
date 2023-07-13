@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 .font-days {
-   font-family: 'Days One', sans-serif;
- }
+    font-family: 'Days One', sans-serif;
+}
 
- .roboto {
-  font-family: 'Roboto', sans-serif;
- }
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
 
 /* 
 .clouds {
