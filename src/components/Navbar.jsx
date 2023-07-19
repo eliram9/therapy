@@ -26,7 +26,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between px-6 py-6 poppins font-light border-b-[3px] dark:bg-gray-500">
             <div className="flex items-center">
                 <Link className='flex' to="/">
-                    <Logo className='w-12' />
+                    <Logo className='w-10' />
                     <span className="text-[26px] text-emerald-900 font-light ml-4">Generations</span>
                 </Link>    
                 <div className="ml-10">
