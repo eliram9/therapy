@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiSun, FiMoon } from 'react-icons/fi';
-import { Logo } from '../media/icons'
+import { Logo, LightModeIcon, DarkModeIcon } from '../media/icons'
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = "" }) => {
     let location = useLocation()
-    console.log(location.pathname)
     return (
-        <a href={href} className={`${className} relative group`}>
+        <Link to={href} className={`${className} relative group`}>
             {title}
             <span className={`absolute h-[1px] inline-block bg-teal-900 left-0 -bottom-0.5
                             group-hover:w-full transition-[width] ease duration-800"
@@ -15,26 +14,19 @@ const CustomLink = ({ href, title, className = "" }) => {
             >
                 &nbsp;
             </span>
-        </a>
+        </Link>
     );
 }
 
 const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = React.useState(false);
+    const [theme, toggleTheme] = useThemeSwitcher();
+    console.log(theme);
   
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    // Add dark mode logic here
-  };
-
-  
-
     return (
-        <nav className="flex items-center justify-between px-6 py-6 poppins font-light border-b-[3px]">
+        <nav className="flex items-center justify-between px-6 py-6 poppins font-light border-b-[3px] dark:bg-gray-500">
             <div className="flex items-center">
                 <Link className='flex' to="/">
-                    <Logo className='w-[40px]' />
+                    <Logo className='w-12' />
                     <span className="text-[26px] text-emerald-900 font-light ml-4">Generations</span>
                 </Link>    
                 <div className="ml-10">
@@ -44,18 +36,11 @@ const Navbar = () => {
                     <CustomLink href="/contact-us" title="Contact Us" className="ml-10 text-emerald-900 font-normal hover:text-teal-600" />
                 </div>
             </div>
-            <div className="flex items-center">
-                {isDarkMode ? (
-                <FiSun
-                    className="text-2xl text-emerald-900 cursor-pointer mr-4"
-                    onClick={toggleDarkMode}
-                />
-                ) : (
-                <FiMoon
-                    className="text-2xl text-emerald-900 cursor-pointer mr-4"
-                    onClick={toggleDarkMode}
-                />
-                )}
+            <div className="flex items-center text-teal-900">
+                <p className='font-normal text-sm'>1-(234)-567-8901</p>
+                <button onClick={toggleTheme} className='w-8 ml-4 flex items-center justify-center rounded-full p-1'>
+                    { theme === 'dark' ? <DarkModeIcon /> : <LightModeIcon /> }     
+                </button>
             </div>
         </nav>
         
