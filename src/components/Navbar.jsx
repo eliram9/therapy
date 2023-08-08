@@ -88,8 +88,8 @@ const Navbar = () => {
                 <nav className="items-center justify-between poppins dark:bg-zinc-700">
                     <div className="flex items-center">
                         <Link className='flex' to="/">
-                            <Logo className='w-[44px] dark:fill-white' />
-                            <span className="text-[26px] text-emerald-900 font-extralight ml-4 dark:text-white">Generations</span>
+                            <Logo className='w-[45px] dark:fill-purple-300' />
+                            <span className="text-[26px] text-emerald-900 font-extralight ml-4 dark:text-purple-300">Generations</span>
                         </Link>    
                         <div className="ml-10">
                             <CustomLink href="/our-story" title="Our Story" className="ml-10 text-emerald-900 hover:text-teal-600 text-sm dark:font-light" />

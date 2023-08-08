@@ -10,7 +10,7 @@ import Explanation from './components/Explanation';
 
 function App() {
     return (
-        <div>
+        <div className='h-screen dark:bg-zinc-700'>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
