@@ -4,7 +4,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div className='w-full h-[vh] py-10 px-32 dark:bg-zinc-700 dark:text-white text-center'>
+        <div className='w-full h-[vh] py-10 px-32 dark:bg- dark:bg-neutral-800 dark:text-white text-center'>
 
             {/* <div className='w-full h-[vh] dark:bg-zinc-700 dark:text-white text-center'>
                 <p>שושנה הנסיכה</p>
