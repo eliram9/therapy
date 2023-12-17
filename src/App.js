@@ -7,10 +7,11 @@ import OurStory from './components/OurStory';
 import Resources from './components/Resources';
 import ContactUs from './components/ContactUs';
 import Explanation from './components/Explanation';
+import Footer from './components/Footer';
 
 function App() {
     return (
-        <div className='h-screen dark:bg-sky-950'>
+        <div className='flex flex-col min-h-screen dark:bg-sky-950'>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/contact-us" element={<ContactUs />} />
             </Routes>
+            <Footer className="mt-auto" />
         </div>
         
     );

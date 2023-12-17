@@ -2,8 +2,8 @@ export const Logo = ({ className="", ...rest }) => (
     <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 492.71 404.56"
-    fill="#42645d"
-    className={`w-full h-auto ${className}`}
+    fill="#124C5F"
+    className={`${className}`}
     {...rest}
   >
     <defs>

@@ -8,7 +8,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     return (
         <Link to={href} className={`${className} relative group dark:text-white`}>
             {title}
-            <span className={`absolute h-[1px] inline-block bg-teal-900 left-0 -bottom-0.5
+            <span className={`absolute h-[1px] inline-block bg-main left-0 -bottom-0.5
                             group-hover:w-full transition-[width] ease duration-800"
                             ${location.pathname === href ? "w-full" : "w-0"} dark:bg-white`}
             >
@@ -25,7 +25,7 @@ const MobileCustomLink = ({ href, title, className = "" }) => {
             {title}
             <span className={`absolute h-[1px] inline-block bg-white left-0 -bottom-0.5
                             group-hover:w-full transition-[width] ease duration-800"
-                            ${location.pathname === href ? "w-full" : "w-0"} dark:bg-teal-900`}
+                            ${location.pathname === href ? "w-full" : "w-0"} dark:bg-main`}
             >
                 &nbsp;
             </span>
@@ -47,9 +47,9 @@ const Navbar = () => {
             {/* --- ### --- RESPONSIVE ONLY --- ### --- */}
             {/* Hamburger menu responsive mode */}
             <button className='flex-col justify-center items-center hidden lg:flex z-20' onClick={handleClick}>
-                <span className={`bg-emerald-900 dark:bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-1'}`}></span>
-                <span className={`bg-emerald-900 dark:bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-                <span className={`bg-emerald-900 dark:bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-1'}`}></span>
+                <span className={`bg-main dark:bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-1'}`}></span>
+                <span className={`bg-main dark:bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                <span className={`bg-main dark:bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-1'}`}></span>
             </button>
 
             {/* Responsive menu */}
@@ -87,22 +87,22 @@ const Navbar = () => {
             <div className='w-full flex justify-between items-center lg:hidden'>
                 <nav className="items-center justify-between poppins dark:bg-zinc-700">
                     <div className="flex items-center">
-                        <Link className='flex' to="/">
-                            <Logo className='w-[45px] dark:fill-purple-300' />
-                            <span className="text-[26px] text-emerald-900 font-extralight ml-4 dark:text-purple-300">Generations</span>
+                        <Link className='flex items-center' to="/">
+                            <Logo className='w-12 h-12 dark:fill-purple-300' alt="logo" />
+                            <span className="text-[26px] text-main ml-4 font-extralight dark:text-purple-300">Generations</span>
                         </Link>    
-                        <div className="ml-10">
-                            <CustomLink href="/our-story" title="Our Story" className="ml-10 text-emerald-900 hover:text-teal-600 text-sm dark:font-light" />
-                            <CustomLink href="/explanation" title="Explanation" className="ml-10 text-emerald-900 hover:text-teal-600 text-sm dark:font-light" />
-                            <CustomLink href="/resources" title="Resources" className="ml-10 text-emerald-900 hover:text-teal-600 text-sm dark:font-light" />
-                            <CustomLink href="/contact-us" title="Contact Us" className="ml-10 text-emerald-900 hover:text-teal-600 text-sm dark:font-light" />
+                        <div className="ml-10 mt-1 items-center">
+                            <CustomLink href="/our-story" title="Our Story" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
+                            <CustomLink href="/explanation" title="Explanation" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
+                            <CustomLink href="/resources" title="Resources" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
+                            <CustomLink href="/contact-us" title="Contact Us" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
                         </div>
                     </div>
                 </nav>
                 <nav>
-                    <div className="flex items-center text-teal-900  dark:text-white">
+                    <div className="flex items-center text-main dark:text-white">
                         <p className='font-normal text-sm'>1-(234)-567-8901</p>
-                        <button onClick={toggleTheme} className='w-8 ml-4 flex items-center justify-center rounded-full p-1'>
+                        <button onClick={toggleTheme} className='w-8 ml-4 flex items-center justify-center rounded-full mt-[-3px] p-[3px]'>
                             { theme === 'dark' ? <DarkModeIcon /> : <LightModeIcon /> }     
                         </button>
                     </div>
@@ -110,10 +110,10 @@ const Navbar = () => {
             </div>
 
             {/* This logo will be dispalyed only on mobile */}
-            <div className='hidden lg:flex text-teal-900 dark:text-white'>
-                <Logo className='absolute translate-x-[-50%] left-[50%] top-5 fill-teal-900 h-[32px] dark:fill-white' />
+            <div className='hidden lg:flex text-main dark:text-white'>
+                <Logo className='absolute translate-x-[-50%] left-[50%] top-5 fill-main h-[32px] dark:fill-white' />
                 {/* <p className="text-[18px] font-extralight text-white block mb-12">Generations</p> */}
-                <button onClick={toggleTheme} className='w-6 flex items-center justify-end rounded-full z-20'>
+                <button onClick={toggleTheme} className='w-6 flex items-center justify-end rounded-full z-20 mt-[-20px]'>
                     { theme === 'dark' ? <DarkModeIcon /> : <LightModeIcon /> }     
                 </button>
             </div>    
