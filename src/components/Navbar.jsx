@@ -89,7 +89,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <Link className='flex items-center' to="/">
                             <Logo className='w-12 h-12 dark:fill-purple-300' alt="logo" />
-                            <span className="text-[26px] text-main ml-4 font-extralight dark:text-purple-300">Generations</span>
+                            <span className="text-[26px] text-main ml-4 font-extralight dark:text-purple-300">Therapy</span>
                         </Link>    
                         <div className="ml-10 mt-1 items-center">
                             <CustomLink href="/our-story" title="Our Story" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
