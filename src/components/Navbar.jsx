@@ -42,7 +42,7 @@ const Navbar = () => {
     }
   
     return (
-        <header className='w-full px-32 py-6 flex items-center justify-between dark:bg-zinc-700 relative'>
+        <header className='w-full px-32 py-5 flex items-center justify-between dark:bg-zinc-700 relative'>
 
             {/* --- ### --- RESPONSIVE ONLY --- ### --- */}
             {/* Hamburger menu responsive mode */}
@@ -65,16 +65,16 @@ const Navbar = () => {
                             </div>     */}
                             <div className="text-center mb-12">
                                 <MobileCustomLink href="/" title="Home Page" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block mb-4" />
-                                <MobileCustomLink href="/our-story" title="Our Story" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block mb-4" />
-                                <MobileCustomLink href="/explanation" title="Explanation" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block mb-4" />
+                                <MobileCustomLink href="/about" title="About" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block mb-4" />
+                                <MobileCustomLink href="/emdr" title="EMDR" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block mb-4" />
                                 <MobileCustomLink href="/resources" title="Resources" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block mb-4" />
-                                <MobileCustomLink href="/contact-us" title="Contact Us" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block" />
+                                <MobileCustomLink href="/contact-us" title="Contact" className="text-white dark:text-slate-900 dark:font-light text-sm font-extralight block" />
                             </div>
                         </div>
                     </nav>
                     <nav>
                         <div className="flex items-center dark:text-white text-white">
-                            <p className='font-extralight dark:text-slate-900 dark:font-light text-sm'>1-(234)-567-8901</p>
+                            <p className='font-extralight dark:text-slate-900 dark:font-light text-sm'>(301)-337-5676</p>
                         </div>
                     </nav>
                 </div>
@@ -88,21 +88,21 @@ const Navbar = () => {
                 <nav className="items-center justify-between poppins dark:bg-zinc-700">
                     <div className="flex items-center">
                         <Link className='flex items-center' to="/">
-                            <Logo className='w-12 h-12 dark:fill-purple-300' alt="logo" />
-                            <span className="text-[26px] text-main ml-4 font-extralight dark:text-purple-300">Therapy</span>
+                            <Logo className='w-auto h-auto' alt="logo" />
+                            <span className="text-[26px] text-main ml-2 font-extralight dark:text-purple-300">BigBrain</span>
                         </Link>    
-                        <div className="ml-10 mt-1 items-center">
-                            <CustomLink href="/our-story" title="Our Story" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
-                            <CustomLink href="/explanation" title="Explanation" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
-                            <CustomLink href="/resources" title="Resources" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
-                            <CustomLink href="/contact-us" title="Contact Us" className="ml-10 text-main hover:text-teal-600 text-sm dark:font-light" />
+                        <div className="ml-5 mt-1 items-center">
+                            <CustomLink href="/about" title="About" className="ml-10 text-main text-sm dark:font-light" />
+                            <CustomLink href="/emdr" title="EMDR" className="ml-10 text-main text-sm dark:font-light" />
+                            <CustomLink href="/resources" title="Resources" className="ml-10 text-main text-sm dark:font-light" />
+                            <CustomLink href="/contact-us" title="Contact" className="ml-10 text-main text-sm dark:font-light" />
                         </div>
                     </div>
                 </nav>
                 <nav>
-                    <div className="flex items-center text-main dark:text-white">
-                        <p className='font-normal text-sm'>1-(234)-567-8901</p>
-                        <button onClick={toggleTheme} className='w-8 ml-4 flex items-center justify-center rounded-full mt-[-3px] p-[3px]'>
+                    <div className="flex items-center text-main dark:text-white ">
+                        <p className='font-normal text-sm mt-1'>(301)-337-5676</p>
+                        <button onClick={toggleTheme} className='w-8 ml-4 flex items-center justify-center rounded-full p-[3px]'>
                             { theme === 'dark' ? <DarkModeIcon /> : <LightModeIcon /> }     
                         </button>
                     </div>

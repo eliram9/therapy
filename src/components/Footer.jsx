@@ -19,6 +19,11 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
+            <div className='w-full text-gray rounded-lg mt-3'>
+                <p className='py-3 px-5 rounded-lg bg-red font-semibold text-sm text-black'>Amma Lucy LLC / Therapy is not a crisis facility. Therapy does not provide emergency services. If you or someone you know is experiencing a mental health crisis, 
+                   please call or text 988 at any time to be connected to a trained crisis counselor. If you’re looking to find an incredible therapist for ongoing proactive mental health care, 
+                   you got to the right place, take a deep breath and get connected today!</p>
+            </div>
         </footer>
     );
 }
