@@ -26,6 +26,7 @@ module.exports = {
                 mint: "#C7E7E1",
                 lightGray: "#FAFBFB",
                 banana: "#FFEE94",
+                lightBanana: "#FEFAE3",
                 blue: "#DEECF5",
                 darkGray: "#5B5B5B",
                 red: "#EBA8BF"

@@ -81,7 +81,7 @@ const Navbar = () => {
                 : 
                 null
             }
-            {/* --- ### --- END RESPONSIVE ONLY --- ### --- */}
+            {/* --- ### --- END RESPONSIVE MODE --- ### --- */}
             
 
             <div className='w-full flex justify-between items-center lg:hidden'>
@@ -89,9 +89,14 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <Link className='flex items-center' to="/">
                             <Logo className='w-auto h-auto' alt="logo" />
-                            <span className="text-[26px] text-main ml-2 font-extralight dark:text-purple-300">BigBrain</span>
+                            <span className="text-[26px] text-main ml-1 font-extralight dark:text-purple-300">
+                                Big
+                                <span className='font-normal'>
+                                    Brain
+                                </span>
+                            </span>
                         </Link>    
-                        <div className="ml-5 mt-1 items-center">
+                        <div className="ml-4 mt-1 items-center">
                             <CustomLink href="/about" title="About" className="ml-10 text-main text-sm dark:font-light" />
                             <CustomLink href="/emdr" title="EMDR" className="ml-10 text-main text-sm dark:font-light" />
                             <CustomLink href="/resources" title="Resources" className="ml-10 text-main text-sm dark:font-light" />
