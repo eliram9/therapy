@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section>
             
-            <div className="w-full h-64"1985
+            <div className="w-full h-64"
             >
             <HeroBackground />
             </div>

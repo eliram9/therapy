@@ -28,23 +28,8 @@ const Footer = () => {
      const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="text-main text-center bottom-0 w-full py-10n from-lightGray to-blue">
-            {/* NOT PART OF FOOTER */}
-            <div className='flex justify-center'>
-                <div className='w-[1120px] bg-white flex justify-between rounded-xl drop-shadow-lg border-white border border-opacity-20 px-16 py-8'>
-                    <div className='flex flex-col items-start'>
-                        <h3 style={firstH3}>Ready to get started?</h3>
-                        <h3 style={secondH3}>Talk to us today</h3>
-                    </div>
-                    <div className='flex items-center text-white'> 
-                        <button className='bg-main text-sm py-2 px-4 rounded-xl flex items-center'>I'm ready
-                            <span><Arrow /></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div className='w-full justify-center bg-gradient-to-b from-lightGray to-blue relative z-20 py-10'>
+        <footer className="text-main text-center bottom-0 w-full py-5 bg-gradient-to-b from-lightGray to-blue">    
+            <div className='w-full pt-[150px] justify-center bg-gradient-to-b from-lightGray to-blue relative z-20 py-0'>
                 <div class="grid grid-cols-2 gap-4">
                     <div class='flex justify-center items-center'>
                         <Logo className=' h-10' />
@@ -54,6 +39,7 @@ const Footer = () => {
                             <p className='leading-5'>Resources</p>
                         </div>   
                     </div>
+                    
                     <div class='flex justify-center'>
                         <div className='flex flex-col ml-10 text-sm items-start'>
                             <div className='flex items-center'>
@@ -68,30 +54,42 @@ const Footer = () => {
                     </div>
                 </div> 
 
-                <div className='flex h-auto justify-center items-end py-10 z-20'>
-                    <div className='w-[1400px] py-10 px-5 leading-10 border border-red-200 rounded-xl bg-red-300 bg-opacity-[35%]'>
+                <div className='flex justify-center absolute -top-6 left-1/2 transform -translate-x-1/2'>
+                    <div className='w-[1120px] bg-white flex justify-between rounded-xl drop-shadow-lg border-white border border-opacity-20 px-16 py-8'>
+                        <div className='flex flex-col items-start'>
+                            <h3 style={firstH3}>Ready to get started?</h3>
+                            <h3 style={secondH3}>Talk to us today</h3>
+                        </div>
+                        <div className='flex items-center text-white'> 
+                            <button className='bg-main text-sm py-2 px-4 rounded-xl flex items-center'>I'm ready
+                                <span><Arrow /></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='flex h-auto justify-center items-end py-5 z-20'>
+                    <div className='w-[1400px] py-7 px-5 leading-10 border border-red-200 rounded-xl bg-white bg-opacity-[35%]'>
                         <div className='flex justify-center mb-2'>
                             <Danger fill='#fda4af' />
                         </div>
-                        <p className='leading-5 font-medium'>Amma Lucy LLC and or BigBrain is not a crisis facility.</p>
-                        <p className='font-medium'>Amma Lucy LLC and or BigBrain does not provide emergency services.</p>
-                        <p className='leading-5 font-light'>If you or someone you know is experiencing a mental health crisis, please call or text 988 at any 
+                        <p className='leading-10 font-medium text-sm'>Amma Lucy LLC and or BigBrain is not a crisis facility.</p>
+                        <p className='font-medium text-sm'>Amma Lucy LLC and or BigBrain does not provide emergency services.</p>
+                        <p className='leading-5 font-light text-xs'>If you or someone you know is experiencing a mental health crisis, please call or text 988 at any 
                             time to be connected to a trained crisis counselor. If you’re looking to find an incredible therapist 
                             for ongoing proactive mental health care, you got to the right place, take a deep breath and get 
                             connected today!.</p>
                     </div>           
                 </div>
 
-                <div className='absolute right-0 top-0 -z-10'>
-                    <img src={Pot} className='w-[500px]'/>
-                </div>
-            
                 <div className=''>
-              
                     <p className="text-xs">© {currentYear} All rights reserved to Amma Lucy LLC 
                         <span className='text-lg mx-1'>|</span> 
                             eliram9 & shoshana
                     </p>
+                </div>
+                <div className='absolute -right-12 top-12 -z-10'>
+                    <img src={Pot} className='w-[500px]'/>
                 </div>
             </div>
         </footer>
