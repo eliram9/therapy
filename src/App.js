@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
     return (
-        <div className='flex flex-col min-h-screen dark:bg-sky-950'>
+        <div className='flex flex-col min-h-screen bg-lightGray dark:bg-sky-950'>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

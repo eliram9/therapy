@@ -29,7 +29,7 @@ module.exports = {
                 lightBanana: "#FEFAE3",
                 blue: "#DEECF5",
                 darkGray: "#5B5B5B",
-                red: "#EBA8BF"
+                pink: "#EBA8BF"
             }
         },
         screens: {

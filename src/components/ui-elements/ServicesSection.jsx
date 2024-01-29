@@ -9,7 +9,7 @@ const Card = ({title, href, icon: IconComponent, className }) => {
             <div className='mb-2'>
                 {IconComponent()}
             </div>
-            <div className='truncate'>{title}</div>
+            <div className='truncate mt-2'>{title}</div>
         </Link>
     );
 }
@@ -17,7 +17,7 @@ const Card = ({title, href, icon: IconComponent, className }) => {
 const ServicesSection = () => {
     return (
         <div>
-            <div className='w-full h-auto flex justify-around bg-lightGray text-main'>
+            <div className='w-full h-auto flex justify-evenly bg-lightGray text-main text-sm'>
                 <Card title="APPOINTMENT" href="/contact-us" icon={() => <Calendar />} className='border-mint' />
                 <Card title="FQA" href="/contact-us" icon={() => <FQA />} className='border-banana bg-gradient-to-b from-lightBanana to-white' />
                 <Card title="PROCESS" href="/contact-us" icon={() => <Puzzle />} className='border-mint' />
