@@ -1,8 +1,8 @@
 import React from 'react';
 
-import PageContainer from './ui-elements/PageContainer';
-import ServicesSection from './ui-elements/ServicesSection';
-import Hero from './ui-elements/Hero';
+import PageContainer from '../ui-elements/PageContainer';
+import ServicesSection from '../ui-elements/ServicesSection';
+import Hero from '../ui-elements/Hero';
 
 
 const Home = () => {
