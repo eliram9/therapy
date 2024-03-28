@@ -89,7 +89,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <Link className='flex items-center' to="/">
                             <Logo className='w-auto h-auto' alt="logo" />
-                            <span className="text-[26px] text-main ml-1 font-extralight dark:text-purple-300">
+                            <span className="text-[26px] text-main ml-1 font-extralight dark:text-white">
                                 Big
                                 <span className='font-normal'>
                                     Brain
