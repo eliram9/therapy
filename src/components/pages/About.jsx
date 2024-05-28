@@ -9,22 +9,22 @@ const About = () => {
         <>
             <div className='w-full'>
                 <PageContainer>
-                    <div className='w-full ] flex justify-between items-center'>
+                    <div className='w-full h-[500px] flex justify-evenly items-center'>
                         <div className='w-1/2'>
                             <TextCard title="Hi, I'm Arianne" 
                                       text="I am a licensed certified social worker – clinical in Maryland and Virginia. I offer individual psychotherapy to adults ages 18 and over. All services are being provided currently via telehealth."
                             />
                         </div>
-                        <div>
+                        <div className=''>
                             <img src={Ari} alt='Arianne' />
                         </div>
                     </div>
                 </PageContainer>
 
-                <div className='relative w-full overflow-hidden flex items-end justify-center'>
+                {/* <div className='relative w-full overflow-hidden flex items-end justify-center'>
                     <HeroGrayBackground />
                     <PageContainer className="z-10">
-                        <div className='flex justify-between items-center'>
+                        <div className='flex justify-evenly items-center'>
                         <div className='w-1/2'>
                                 <Factory />
                             </div>
@@ -41,7 +41,7 @@ const About = () => {
                             
                         </div>
                     </PageContainer>
-                </div>
+                </div> */}
             </div>
         </>
     )

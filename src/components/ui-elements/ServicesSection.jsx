@@ -3,12 +3,14 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Bulb, Calendar, FQA, Puzzle } from '../../media/icons'
 
-const Card = ({ title, href, icon: IconComponent, className, border, bg }) => {
+const ServiceCard = ({ title, href, icon: IconComponent, className, border, bg }) => {
     return (
-        <Link to={href} className={`flex flex-col justify-center items-center shadow-lg rounded-lg w-52 h-[170px] p-4 border-[2px] ${border} ${bg}
-                                  hover:border-banana hover:bg-gradient-to-b from-lightBanana to-white transition-all
+        <Link to={href} className={`flex flex-col justify-center items-center shadow-lg rounded-lg w-52 h-[170px] p-4 border-[2px] bg-gradient-to-b from-mint to-white ${border} ${bg}
+                        hover:border-main hover:text-main hover:bg-gradient-to-b from-mint to-white transition-all relative
+                        hover:scale-105 transform ease-in-out duration-700 will-change-transform
+                      `}
+            style={{ backfaceVisibility: 'hidden' }}
                                   
-                                  `}
         >
             <div className='mb-2'>
                 {IconComponent()}
@@ -26,10 +28,10 @@ const ServicesSection = () => {
                 <div style={{ height: '3px', background: '#333', width: '6%' }}></div>
             </div>
             <div className='w-full h-auto flex justify-evenly text-main text-sm'>
-                <Card title="APPOINTMENT" href="/contact-us" border="border-mint" icon={() => <Calendar />} />
-                <Card title="FQA" href="/contact-us" border="border-banana" bg="bg-gradient-to-b from-lightBanana to-white" icon={() => <FQA />} />
-                <Card title="PROCESS" href="/contact-us" border="border-mint" icon={() => <Puzzle />} />
-                <Card title="RESOURCES" href="/contact-us" border="border-banana" bg="bg-gradient-to-b from-lightBanana to-white" icon={() => <Bulb />} />
+                <ServiceCard title="APPOINTMENT" href="/contact-us" border="border-mint" icon={() => <Calendar />} />
+                <ServiceCard title="FQA" href="/contact-us" border="border-mint" icon={() => <FQA />} />
+                <ServiceCard title="PROCESS" href="/contact-us" border="border-mint" icon={() => <Puzzle />} />
+                <ServiceCard title="RESOURCES" href="/contact-us" border="border-mint" icon={() => <Bulb />} />
             </div>
         </div>
     )

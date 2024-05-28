@@ -54,7 +54,7 @@ const Footer = () => {
                     </div>
                 </div> 
 
-                <div className='flex justify-center absolute -top-6 left-1/2 transform -translate-x-1/2'>
+                {/* <div className='flex justify-center absolute -top-6 left-1/2 transform -translate-x-1/2'>
                     <div className='w-[1120px] bg-white flex justify-between rounded-xl drop-shadow-lg border-white border border-opacity-20 px-16 py-8'>
                         <div className='flex flex-col items-start'>
                             <h3 style={firstH3}>Ready to get started?</h3>
@@ -66,7 +66,7 @@ const Footer = () => {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='flex h-auto justify-center items-end py-5 z-20'>
                     <div className='w-[1400px] py-7 px-5 leading-10 border border-red-200 rounded-xl bg-white bg-opacity-[35%]'>
