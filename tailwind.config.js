@@ -19,8 +19,8 @@ module.exports = {
             huge: "1em",
             wider: '0.75em',
             wide: '0.55em',
-            reg: '0.25em',
-            text: '0.1em'
+            reg: '0.2em',
+            text: '0.03em'
         },
         fontFamily: {
             'days': ['Days One', 'sans-serif']
@@ -39,7 +39,8 @@ module.exports = {
                 lightBanana: "#FEFAE3",
                 blue: "#DEECF5",
                 darkGray: "#5B5B5B",
-                pink: "#EBA8BF"
+                pink: "#EBA8BF",
+                black: "#4E4C46"
             }
         },
         screens: {
