@@ -16,3 +16,12 @@ code {
 .poppins {
     font-family: 'Poppins', sans-serif; 
 }
+
+@layer utilities {
+    .bg-hero-background {
+      background-image: url('./media/hero.svg'); /* Ensure the path is correct */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }

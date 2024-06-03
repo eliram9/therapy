@@ -10,12 +10,12 @@ import Reviews from '../ui-elements/Reviews';
 
 const Home = () => {
     return (
-        <section className="bg-lightGray dark:bg-zinc-700">
+        <section className="w-full h-screen bg-lightGray dark:bg-zinc-700">
             <Hero />
             <PageContainer>
                 <ServicesSection />
                 <HelpYou />
-                <Reviews />
+                <Reviews /> 
             </PageContainer>
         </section>  
     )
