@@ -11,7 +11,7 @@ import EMDR from './components/pages/EMDR';
 
 function App() {
     return (
-        <div className='flex flex-col bg-lightGray'>
+        <div className='flex flex-col'>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

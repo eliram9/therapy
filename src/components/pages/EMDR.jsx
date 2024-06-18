@@ -2,7 +2,7 @@ import React from 'react';
 import PageContainer from '../ui-elements/PageContainer';
 import TextCard from '../ui-elements/TextCard'; // This import doesn't seem to be used.
 import { Factory, GirlsPuzzle, HeroGrayBackground, CC, Payment } from '../../media/icons';
-import QouteBox from '../ui-elements/QouteBox';
+import QuoteBox from '../ui-elements/QuoteBox';
 
 
 const EMDR = () => {
@@ -39,7 +39,7 @@ const EMDR = () => {
 
             <section>
                 <div className="flex justify-center items-center">
-                    <QouteBox 
+                    <QuoteBox 
                         qoute="The goal of EMDR therapy is trait change so that the negative emotions and sensations will no longer habitually arise." 
                         author="Francine Shapiro, Florence W. Kaslow & Louise Maxfield"
                     />
@@ -78,7 +78,9 @@ const EMDR = () => {
                 </div>
             </section>
 
-            <section>
+            
+
+            {/* <section>
                 <div className='w-full text-darkGray'>
                     <div className='relative w-full overflow-hidden flex justify-center h-[700px]'>
                         <PageContainer className="z-10">
@@ -120,7 +122,7 @@ const EMDR = () => {
                         </PageContainer>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 }

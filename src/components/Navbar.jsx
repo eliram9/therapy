@@ -42,7 +42,7 @@ const Navbar = () => {
     }
   
     return (
-        <header className='w-full px-32 py-5 flex items-center justify-between dark:bg-zinc-700 relative poppins md:px-4 lg:px-8 xl:px-12'>
+        <header className='w-full px-32 py-5 flex items-center justify-between bg-mint dark:black relative poppins md:px-4 lg:px-8 xl:px-12 dark:bg-black'>
 
             {/* --- ### --- RESPONSIVE ONLY --- ### --- */}
             {/* Hamburger menu responsive mode */}
@@ -123,7 +123,7 @@ const Navbar = () => {
             
 
             <div className='w-full flex justify-between items-center sm:hidden'>
-                <nav className="items-center justify-between poppins dark:bg-zinc-700">
+                <nav className="items-center justify-between poppins dark:bg-black">
                     <div className="flex items-center">
                         <Link className='flex items-center md:mt-1' to="/" >
                             <Logo className={theme === "dark" ? "white" : "#124C5F"} alt="logo"  />

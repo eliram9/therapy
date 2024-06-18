@@ -19,9 +19,42 @@ code {
 
 @layer utilities {
     .bg-hero-background {
-      background-image: url('./media/hero.svg'); /* Ensure the path is correct */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+        background-image: url('./media/hero.svg'); /* Ensure the path is correct */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
+}
+
+/* embla.css */
+.embla {
+    overflow: hidden;
+    padding: 1rem 0 ;
   }
+  
+  .embla__container {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .embla__slide {
+    min-width: 25%; /* 100% divided by the number of slides to show */
+    padding: 0.5rem 0;
+  }
+
+  
+  
+  .embla__button {
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .embla__button[disabled] {
+    cursor: not-allowed;
+  }
+  
+  .embla__button svg {
+    width: 24px;
+    height: 24px;
+  }
+  
