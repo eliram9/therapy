@@ -131,7 +131,13 @@ const Footer = () => {
                 <div className=''>
                     <p className="text-xs">© {currentYear} All rights reserved to Amma Lucy LLC 
                         <span className='mx-1'>|</span> 
-                            eliram9 & shoshana
+                        <a href="https://github.com/eliram9" className="text-main hover:underline" target="_blank" rel="noopener noreferrer">
+                            eliram9
+                        </a>
+                        &nbsp;&amp;&nbsp;
+                        <a href="https://github.com/ItayLevy1" className="text-main hover:underline" target="_blank" rel="noopener noreferrer">
+                            ItayLevy1
+                        </a>
                     </p>
                 </div>
                 <p className='text-red-500'>{bannerWidth}</p>

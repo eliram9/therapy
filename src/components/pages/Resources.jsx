@@ -64,9 +64,9 @@ const Resources = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full grid grid-cols-3 gap-4 items-center justify-center bg-red-200
+                    <div className='w-full grid grid-cols-3 gap-4 items-center justify-center
                                     sm:grid-cols-1 md:grid-cols-2 '>
-                        <div className="p-4 bg-green-300">
+                        <div className="p-4">
                             <iframe width="100%" height="315"
                                     src="https://www.youtube.com/embed/hKrfH43srg8?si=xKgRsYXmkf0bWmQs"// Replace this with your YouTube video URL
                                     title="How EMDR works?"
@@ -75,7 +75,7 @@ const Resources = () => {
                                     className='border border-white rounded-lg shadow-lg p-3'
                             ></iframe>
                         </div>
-                        <div className=" p-4 bg-purple-300">
+                        <div className="p-4">
                             <iframe width="100%" height="315" 
                                     src="https://www.youtube.com/embed/bIJZQAr9nQo?si=w3IhswI_hwtIFpjd" 
                                     title="YouTube video player" 
@@ -87,7 +87,7 @@ const Resources = () => {
                             >
                             </iframe>
                         </div>
-                        <div className=" p-4 bg-yellow-300">
+                        <div className="p-4">
                             <iframe width="100%" height="315" 
                                     src="https://www.youtube.com/embed/Pkfln-ZtWeY?si=7XSC0h3VLnuObl2j"
                                     title="YouTube video player" 
