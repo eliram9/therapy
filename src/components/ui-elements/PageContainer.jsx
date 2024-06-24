@@ -2,8 +2,8 @@ import React from 'react'
 
 const PageContainer = ({ className, children }) => {
     return (
-        <div className={`flex justify-center px-4 w-full h-auto ${className}`} >
-            <main className='w-[1650px]'>
+        <div className={`flex justify-center w-full h-auto px-32 md:px-4 lg:px-8 xl:px-10 ${className} poppins`}>
+            <main className='h-auto w-full'>
                 {children}
             </main>
         </div>

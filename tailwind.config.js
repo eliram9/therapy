@@ -8,12 +8,14 @@ module.exports = {
         fontSize: {
             xs: '0.7rem',
             sm: '0.8rem',
+            md: "0.9rem",
             base: '1rem',
             xl: '1.25rem',
             '2xl': '1.5rem',
             '3xl': '2rem',
             '4xl': '2.5rem',
-            '5xl': '3.052rem',
+            '5xl': '3.0rem',
+            '6xl': '3.75rem'
         },
         letterSpacing: {
             huge: "1em",
@@ -30,7 +32,12 @@ module.exports = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic':
                 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+               
             },
+            filter: {
+                'blur-5': 'blur(5px)',
+            },
+
             colors: {
                 main: "#124C5F",
                 mint: "#C7E7E1",
@@ -44,27 +51,22 @@ module.exports = {
             }
         },
         screens: {
-            "3xl": { min: "1535px" },
-            // @media (max-width: 1535px) { ... }
+            "3xl": { min: "1535px" }, //Extra-large desktops
 
-            "2xl": { min: "1280px" },
-            // @media (max-width: 1535px) { ... }
+            "2xl": { min: "1280px" }, // Larger desktops
 
-            xl: { max: "1279px" },
-            // @media (max-width: 1279px) { ... }
+            xl: { max: "1279px" }, // Laptops and desktops
 
-            lg: { max: "1023px" },
-            // @media (max-width: 1023px) { ... }
+            lg: { max: "1023px" }, // Tablets and smaller laptops
 
-            md: { max: "767px" },
-            // @media (max-width: 767px) { ... }
+            md: { max: "767px" }, // Tablets and smaller laptops
+ 
+            sm: { max: "639px" }, // Larger mobile devices
 
-            sm: { max: "639px" },
-            // @media (max-width: 639px) { ... }
-
-            xs: { max: "479px" },
-            // @media (max-width: 479px) { ... }
+            xs: { max: "479px" } // Mobile devices 
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwindcss-filters'),
+    ],
 }

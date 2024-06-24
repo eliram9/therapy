@@ -6,17 +6,20 @@ import Hero from '../ui-elements/Hero';
 import HelpYou from '../ui-elements/HelpYou';
 import { YellowShape } from '../../media/icons';
 import Reviews from '../ui-elements/Reviews';
+import Footer from '../Footer';
 
 
 const Home = () => {
     return (
-        <section className="bg-lightGray dark:bg-zinc-700">
+        <section className="w-full h-screen">
+        {/* <section className="w-full h-screen bg-gradient-to-b from-mint to-white"> */}
             <Hero />
             <PageContainer>
                 <ServicesSection />
                 <HelpYou />
-                <Reviews />
+                <Reviews /> 
             </PageContainer>
+            <Footer />
         </section>  
     )
 }

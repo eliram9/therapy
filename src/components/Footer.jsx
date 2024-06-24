@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Arrow, Envelope, Logo, Phone, Danger } from '../media/icons';
-import Pot from '../media/pot.gif'; 
+
 
 const firstH3 = {
     backgroundImage: 'linear-gradient(to right, #124C5F, #C7E7E1, #EBA8BF)',
@@ -9,7 +10,6 @@ const firstH3 = {
     backgroundClip: 'text',
     color: 'transparent',
     display: 'inline',
-    fontSize: '25px',
     fontWeight: 600,
 }
 
@@ -19,54 +19,100 @@ const secondH3 = {
     backgroundClip: 'text',
     color: 'transparent',
     display: 'inline',
-    fontSize: '25px',
     fontWeight: 600
-
 }
 
 const Footer = () => {
-     const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear();
+    const [bannerWidth, setBannerWidth] = useState("");
+
+    useEffect(() => {
+        const calculateWidth = () => {
+            const screenWidth = window.innerWidth;
+    
+            let newWidth;
+            if (screenWidth <= 767) {
+                newWidth = `${screenWidth * 0.9}px`; // 80% of the screen width for smaller screens
+            } else if (screenWidth > 767 && screenWidth <= 1279) {
+                newWidth = `${screenWidth * 0.8}px`; // 60% of 767px for medium screens
+            } else {
+                newWidth = `${screenWidth * 0.65}px`; // 50% of the screen width for larger screens
+            }
+        
+            setBannerWidth(newWidth);
+        };
+    
+        calculateWidth();
+        window.addEventListener('resize', calculateWidth);
+    
+        return () => window.removeEventListener('resize', calculateWidth);
+      }, []);
 
     return (
         <footer className="text-main text-center bottom-0 w-full py-5 bg-gradient-to-b from-lightGray to-blue poppins">    
             <div className='w-full pt-[150px] justify-center bg-gradient-to-b from-lightGray to-blue relative z-20 py-0'>
-                <div className="grid grid-cols-2 gap-4">
-                    <div className='flex justify-center items-center'>
-                        <Logo className=' h-10' />
-                        <div className='flex flex-col ml-10 text-sm items-start'>
-                            <p className='leading-5'>About</p>
-                            <p className='leading-5'>EMDR</p>
-                            <p className='leading-5'>Resources</p>
-                        </div>   
-                    </div>
-                    
-                    <div className='flex justify-center'>
-                        <div className='flex flex-col ml-10 text-sm items-start'>
-                            <div className='flex items-center'>
-                                <Phone fill="#124C5F"/>
-                                <p className='leading-10'>+1 (301)-337-5676</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <Envelope fill="#124C5F"/>
-                                <p className='leading-10'>info@bigbrain.com</p>         
-                            </div>
-                        </div>   
-                    </div>
-                </div> 
+                <div className="md:flex md:flex-col grid grid-cols-3 gap-1 xs:gap-4">
+                <Link className='flex items-center justify-center'  to="/" >
+                            <Logo className={"#124C5F"} alt="logo"  />
+                            <span className="text-[26px] md:text-base text-main ml-1 font-extralight dark:text-white">
+                                Big
+                                <span className='font-normal'>
+                                    Brain
+                                </span>
+                            </span>
+                        </Link>   
 
-                {/* <div className='flex justify-center absolute -top-6 left-1/2 transform -translate-x-1/2'>
-                    <div className='w-[1120px] bg-white flex justify-between rounded-xl drop-shadow-lg border-white border border-opacity-20 px-16 py-8'>
-                        <div className='flex flex-col items-start'>
+                    
+                    
+                    <div className="flex justify-center bg-red200">
+                        {/* <div className="flex flex-col ml-10 text-sm items-start xs:justify-between"> */}
+                        <div className="flex flex-col ml-10 text-sm items-start xs:justify-between">   
+
+                            <div className="flex items-center">
+                                <Phone fill="#124C5F" />
+                                <p className="leading-10">+1 (301)-337-5676</p>
+                            </div>
+                            <div className="flex items-center">
+                                <Envelope fill="#124C5F" />
+                                <p className="leading-10">info@bigbrain.com</p>         
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col text-sm items-center sm:grid sm:grid-cols-3">
+                            <Link to="/about" className="leading-5">About</Link>
+                            <Link to="/emdr" className="leading-5">EMDR</Link>
+                            <Link to="/resources" className="leading-5">Resources</Link>
+                        </div>   
+                    </div>
+                </div>
+
+                <div className='w-full flex justify-center absolute -top-[110px] left-1/2 transform -translate-x-1/2 dark:bg-black
+                                xl:-top-[95px] md:-top-[100px]'
+                >
+                    <div style={{ width: bannerWidth }} 
+                         className='bg-white flex flex-row justify-between rounded-xl drop-shadow-lg border-white border border-opacity-20 px-16 py-8
+                                    sm:flex-col sm:justify-center sm:p-6'
+                    >
+                        <div className='flex flex-col items-start justify-end text-3xl mb-4 sm:mb-0
+                                        xs:text-md sm:text-xl sm:items-center xl:text-2xl'
+                        >
                             <h3 style={firstH3}>Ready to get started?</h3>
                             <h3 style={secondH3}>Talk to us today</h3>
                         </div>
-                        <div className='flex items-center text-white'> 
-                            <button className='bg-main text-sm py-2 px-4 rounded-xl flex items-center'>I'm ready
+                        
+                        <div className='flex items-center text-white sm:mt-6 sm:justify-center'> 
+                            <Link to="/contact-us"
+                                  className='bg-main text-sm py-2 px-4 rounded-xl flex items-center hover:bg-[#0E3A4A]
+                                              sm:py-1 xs:text-xs'
+                            >
+                                I'm ready
                                 <span><Arrow /></span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
-                </div> */}
+                </div> 
 
                 <div className='flex h-auto justify-center items-end py-5 z-20'>
                     <div className='w-[1400px] py-7 px-5 leading-10 border border-red-200 rounded-xl bg-white bg-opacity-[35%]'>
@@ -88,9 +134,7 @@ const Footer = () => {
                             eliram9 & shoshana
                     </p>
                 </div>
-                {/* <div className='absolute -right-12 top-12 -z-10'>
-                    <img src={Pot} className='w-[500px]'/>
-                </div> */}
+                <p className='text-red-500'>{bannerWidth}</p>
             </div>
         </footer>
     );
