@@ -42,7 +42,7 @@ const Navbar = () => {
     }
   
     return (
-        <header className='w-full px-32 py-5 flex items-center justify-between bg-mint dark:black relative poppins md:px-4 lg:px-8 xl:px-12 dark:bg-black'>
+        <header className='w-full px-32 py-5 flex items-center justify-between dark:black relative poppins md:px-4 lg:px-8 xl:px-12 dark:bg-black'>
 
             {/* --- ### --- RESPONSIVE ONLY --- ### --- */}
             {/* Hamburger menu responsive mode */}

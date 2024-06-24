@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom'
 import { Bulb, Calendar, FQA, Puzzle } from '../../media/icons'
+import SectionSubtitle from './SectionSubtitle';
 
 const ServiceCard = ({ title, href, icon: IconComponent, className, border, bg }) => {
     return (
@@ -25,11 +26,8 @@ const ServiceCard = ({ title, href, icon: IconComponent, className, border, bg }
 const ServicesSection = () => {
     return (
         <div className='py-5 poppins mt-10 mb-20'>
-            <div className="flex flex-col">
-                <h2 className="text-2xl font-semibold text-main relative dark:text-white">Services Category</h2>
-                <div style={{ height: '3px', background: '#333', width: '100px' }}></div>
-            </div>
-            <div className='mt-20 sm:grid sm:grid-cols-2 sm:gap-4 justify-items-center flex justify-between items-center gap-6'>  {/* Adjusted grid layout and added flex for md screens */}
+            <SectionSubtitle subtitle="Services Category" />
+            <div className='mt-20 sm:grid sm:grid-cols-2 sm:gap-4 justify-items-center flex justify-around items-center gap-6'>  {/* Adjusted grid layout and added flex for md screens */}
                 <ServiceCard title="APPOINTMENT" href="/contact-us" border="border-mint" icon={() => <Calendar />} />
                 <ServiceCard title="FQA" href="/contact-us" border="border-mint" icon={() => <FQA />} />
                 <ServiceCard title="PROCESS" href="/contact-us" border="border-mint" icon={() => <Puzzle />} />

@@ -11,7 +11,8 @@ import Footer from '../Footer';
 
 const Home = () => {
     return (
-        <section className="w-full h-screen bg-gradient-to-b from-mint to-white">
+        <section className="w-full h-screen">
+        {/* <section className="w-full h-screen bg-gradient-to-b from-mint to-white"> */}
             <Hero />
             <PageContainer>
                 <ServicesSection />

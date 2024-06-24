@@ -31,66 +31,74 @@ const ContactForm = () => {
   };
 
     return (
-        <div className='bg-banana p-10 w-1/2 poppins'>
-            <form onSubmit={sendEmail} className='w-full'>
-                <div className='w-full flex justify-center items-start'>
-                    <div className=''>
-                        <label htmlFor="first_name" className="block mb-1 text-sm font-medium text-darkGray">First Name</label>
+        <div className='p-10 w-full poppins sm:px-0 lg:px-0'>
+            <form onSubmit={sendEmail} className='w-full font-light'>
+                <div className='w-full grid grid-cols-2 gap-10 justify-center items-start text-md 
+                                lg:text-sm'
+                >
+                    <div className='w-full pb-10'>
                         <input type="text" 
                             name="first_name" 
                             value={formInputs.first_name} 
                             onChange={handleChange} 
                             required 
-                            className='border rounded-md w-full px-2 py-1'
+                            placeholder='First Name'
+                            className='border-main border-2 rounded-md w-full px-2 p-2'
                         />
                     </div>
-                    <div className='w-full'>
-                        <label htmlFor="last_name" className="block mb-1 text-sm font-medium text-darkGray">Last Name</label>
+                    <div className='w-full pb-10'>
                         <input type="text" 
                             name="last_name" 
                             value={formInputs.from_name} 
                             onChange={handleChange} 
+                            placeholder='Last Name'
                             required 
-                            className='border rounded-md w-full px-2 py-1'
+                            className='border-main border-2 rounded-md w-full px-2 p-2'
                         />
                     </div>
                 </div>
                     
-                <div className='w-full flex justify-center items-start'>
-                    <div className='w-full'>
-                        <label htmlFor="email" className="block mb-1 text-sm font-medium text-darkGray">Email Address</label>
+                <div className='w-full grid grid-cols-2 gap-10 justify-center items-start text-md
+                                lg:text-sm'
+                >
+                    <div className='w-full pb-10'>
                         <input type="email" 
                             name="email" 
                             value={formInputs.email} 
                             onChange={handleChange} 
+                            placeholder='Email Address'
                             required 
-                            className='border rounded-md w-full px-2 py-1'
+                            className='border-main border-2 rounded-md w-full px-2 p-2'
                         />
                     </div>
-                    <div className='w-full'>
-                        <label htmlFor="phone" className="block mb-1 text-sm font-medium text-darkGray">Phone Number</label>
+                    <div className='w-full pb-10'>
                         <input type="number" 
                             name="phone" 
                             value={formInputs.phone} 
                             onChange={handleChange} 
+                            placeholder='Phone Number'
                             required 
-                            className='border rounded-md w-full px-2 py-1'
+                            className='border-main border-2 rounded-md w-full px-2 p-2'
                         />
                     </div>
                 </div>
                 
-                <div>
-                    <label htmlFor="message" className="block mb-1 text-sm font-medium text-darkGray">Message</label>
+                <div className='w-full pb-10'>  
+                    <label htmlFor="message" className="block mb-1 text-sm font-light text-darkGray lg:text-sm">Message (optional)</label>
                     <textarea name="message" 
                             value={formInputs.message} 
                             onChange={handleChange} 
-                            required
                             rows={3}
-                            className='border rounded-md w-full px-2 py-1'>
+                            className='border-main border-2 rounded-md w-full px-2 p-2 lg:text-sm'>
                     </textarea>
                 </div>
                 
-                <button type="submit">Send</button>
+                <button type="submit"
+                        className='w-full bg-main text-white py-3 rounded-md border-2 border-main hover:bg-white hover:text-main hover:font-normal
+                                   md:text-md'
+                >
+                    Send
+                </button>
             </form>
         </div>
     );

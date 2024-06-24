@@ -32,7 +32,12 @@ module.exports = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic':
                 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+               
             },
+            filter: {
+                'blur-5': 'blur(5px)',
+            },
+
             colors: {
                 main: "#124C5F",
                 mint: "#C7E7E1",
@@ -61,5 +66,7 @@ module.exports = {
             xs: { max: "479px" } // Mobile devices 
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwindcss-filters'),
+    ],
 }
