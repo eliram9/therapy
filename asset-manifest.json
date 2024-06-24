@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/therapy/static/css/main.2fccdd25.css",
-    "main.js": "/therapy/static/js/main.3cffa200.js",
+    "main.js": "/therapy/static/js/main.7946c7b0.js",
     "static/media/Ari.svg": "/therapy/static/media/Ari.ce7568c36846210d18ff41fa2f12bf98.svg",
     "static/media/moshe.jpg": "/therapy/static/media/moshe.b5b4bd4f4f8ff1337bb6.jpg",
     "static/media/john.jpeg": "/therapy/static/media/john.54b4b763010f093486f9.jpeg",
@@ -12,10 +12,10 @@
     "static/media/hero.svg": "/therapy/static/media/hero.f72a944cc80ab52a175a.svg",
     "index.html": "/therapy/index.html",
     "main.2fccdd25.css.map": "/therapy/static/css/main.2fccdd25.css.map",
-    "main.3cffa200.js.map": "/therapy/static/js/main.3cffa200.js.map"
+    "main.7946c7b0.js.map": "/therapy/static/js/main.7946c7b0.js.map"
   },
   "entrypoints": [
     "static/css/main.2fccdd25.css",
-    "static/js/main.3cffa200.js"
+    "static/js/main.7946c7b0.js"
   ]
 }
