@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/therapy/static/css/main.2fccdd25.css",
+    "main.js": "/therapy/static/js/main.3cffa200.js",
+    "static/media/Ari.svg": "/therapy/static/media/Ari.ce7568c36846210d18ff41fa2f12bf98.svg",
+    "static/media/moshe.jpg": "/therapy/static/media/moshe.b5b4bd4f4f8ff1337bb6.jpg",
+    "static/media/john.jpeg": "/therapy/static/media/john.54b4b763010f093486f9.jpeg",
+    "static/media/ross.jpg": "/therapy/static/media/ross.ac2fadb0cec13d80888d.jpg",
+    "static/media/rachel.jpg": "/therapy/static/media/rachel.534cd2312187bdbeb739.jpg",
+    "static/media/dave.jpeg": "/therapy/static/media/dave.9183276040729acdc1db.jpeg",
+    "static/media/shula.jpeg": "/therapy/static/media/shula.6e00fc98ad10dfbb78ea.jpeg",
+    "static/media/hero.svg": "/therapy/static/media/hero.f72a944cc80ab52a175a.svg",
+    "index.html": "/therapy/index.html",
+    "main.2fccdd25.css.map": "/therapy/static/css/main.2fccdd25.css.map",
+    "main.3cffa200.js.map": "/therapy/static/js/main.3cffa200.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fccdd25.css",
+    "static/js/main.3cffa200.js"
+  ]
+}
