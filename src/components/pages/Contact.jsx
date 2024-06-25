@@ -1,6 +1,8 @@
 import React from 'react';
+
 import PageContainer from '../ui-elements/PageContainer';
 import ContactForm from '../ui-elements/ContactForm';
+import SectionSubtitle from '../ui-elements/SectionSubtitle';
 import { SendingEmail, BBackground } from '../../media/icons';
 import Footer from '../Footer';
 
@@ -8,16 +10,11 @@ import Footer from '../Footer';
 const Contact = () => {
     return (
         <>
-            <section className=''>
+            <section>
                 {/* <section className='bg-gradient-to-b from-mint to-lightGray'> */}
                 
                 <PageContainer className='relative z-10 text-darkGray dark:bg-black pb-40'>
-                    <h1 className='text-4xl font-4xl font-semibold mb-8 dark:text-white flex justify-center
-                                   sm:text-xl my-8'
-                    
-                    >
-                        Ask Me Anything
-                    </h1>
+                    <SectionSubtitle subtitle="Ask Me Anything" className="sm:my-10" />
                     <div className='flex sm:flex-col-reverse md:flex-row items-center justify-between'>
                         {/* Text Container */}
                         <div className='w-7/12 flex items-center text-darkGray pr-10
@@ -28,7 +25,7 @@ const Contact = () => {
                         
                         {/* Image Container */}
                         <div className='w-5/12 flex justify-center
-                                        sm:w-full '
+                                        sm:w-4/6 sm:h-fit sm:pb-3'
                         >
                             <SendingEmail />
                         </div>

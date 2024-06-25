@@ -34,7 +34,7 @@ const ContactForm = () => {
         <div className='p-10 w-full poppins sm:px-0 lg:px-0'>
             <form onSubmit={sendEmail} className='w-full font-light'>
                 <div className='w-full grid grid-cols-2 gap-10 justify-center items-start text-md 
-                                lg:text-sm'
+                                lg:text-sm sm:gap-3'
                 >
                     <div className='w-full pb-10'>
                         <input type="text" 
@@ -59,7 +59,7 @@ const ContactForm = () => {
                 </div>
                     
                 <div className='w-full grid grid-cols-2 gap-10 justify-center items-start text-md
-                                lg:text-sm'
+                                lg:text-sm sm:gap-3'
                 >
                     <div className='w-full pb-10'>
                         <input type="email" 
@@ -84,7 +84,7 @@ const ContactForm = () => {
                 </div>
                 
                 <div className='w-full pb-10'>  
-                    <label htmlFor="message" className="block mb-1 text-sm font-light text-darkGray lg:text-sm">Message (optional)</label>
+                    <label htmlFor="message" className="block mb-1 text-sm font-light text-darkGray lg:text-sm dark:text-lightGray">Message (optional)</label>
                     <textarea name="message" 
                             value={formInputs.message} 
                             onChange={handleChange} 

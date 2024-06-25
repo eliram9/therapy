@@ -6,7 +6,9 @@ const SectionSubtitle = ({ subtitle, className }) => {
 
     return (
         <div className={`flex flex-col ${className}`}>
-            <h2 className="text-3xl font-semibold text-black relative dark:text-white">
+            <h2 className="text-3xl font-semibold text-black relative dark:text-white
+                           sm:text-2xl "
+            >
                 {subtitle}
             </h2>
             <div style={{ height: '3px', background: '#124C5F', width: underlineWidth }}></div>
