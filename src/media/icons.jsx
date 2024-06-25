@@ -206,14 +206,15 @@ export const HeroBackground = ({ className='', ...rest }) => (
   </svg>
 )
 
-export const BrainGear = ({ className="", ...rest }) => (
+export const BrainGear = ({ className="", viewBox = "-90 0 672 690", ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     width="672"
     height="690"
     fill="none"
-    viewBox="-90 0 672 690"
+    viewBox={viewBox}
+    className={`${className}`}
     {...rest}
   >
           <g clipPath="url(#clip0_159_948)">

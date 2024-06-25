@@ -16,8 +16,9 @@ const Resources = () => {
                     
                         {/* Image Container */}
                         <div className='w-3/6 flex justify-center xs:mb-4 md:mb-0
-                                        sm:w-3/4'>
-                            <ResourcesImage className='sm:h-fit' />
+                                        sm:w-4/6 sm:h-fit sm:pb-3'
+                        >
+                            <ResourcesImage className='sm:h-1/2' />
                         </div>
                         
                         {/* Text Container */}
