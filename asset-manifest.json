@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/therapy/static/css/main.75b56c21.css",
-    "main.js": "/therapy/static/js/main.705ca26a.js",
+    "main.css": "/therapy/static/css/main.0a28736c.css",
+    "main.js": "/therapy/static/js/main.37b7675c.js",
     "static/media/Ari.svg": "/therapy/static/media/Ari.ce7568c36846210d18ff41fa2f12bf98.svg",
     "static/media/moshe.jpg": "/therapy/static/media/moshe.b5b4bd4f4f8ff1337bb6.jpg",
     "static/media/john.jpeg": "/therapy/static/media/john.54b4b763010f093486f9.jpeg",
@@ -11,11 +11,11 @@
     "static/media/shula.jpeg": "/therapy/static/media/shula.6e00fc98ad10dfbb78ea.jpeg",
     "static/media/hero.svg": "/therapy/static/media/hero.f72a944cc80ab52a175a.svg",
     "index.html": "/therapy/index.html",
-    "main.75b56c21.css.map": "/therapy/static/css/main.75b56c21.css.map",
-    "main.705ca26a.js.map": "/therapy/static/js/main.705ca26a.js.map"
+    "main.0a28736c.css.map": "/therapy/static/css/main.0a28736c.css.map",
+    "main.37b7675c.js.map": "/therapy/static/js/main.37b7675c.js.map"
   },
   "entrypoints": [
-    "static/css/main.75b56c21.css",
-    "static/js/main.705ca26a.js"
+    "static/css/main.0a28736c.css",
+    "static/js/main.37b7675c.js"
   ]
 }
