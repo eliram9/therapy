@@ -10,32 +10,35 @@ const Hero = () => {
     const isSmallScreen = useScreenSize();
 
     return (
-        <section className="relative w-full pt-20 h-screen poppins dark:bg-black">
+        <section className="relative w-full h-screen poppins dark:bg-black
+                            md:pt-20 sm:h-screen md:h-3/4"
+        >
             <div className="absolute inset-0 w-full h-full bg-hero-background dark:z-20"></div>
-            <div className="relative z-10 text-center w-full h-full xs:1/2 flex items-center justify-center">
+            <div className="relative z-10 text-center w-full xs:1/2 flex items-center justify-center">
                 <PageContainer>
-                    <div className='w-full flex sm:flex-col flex-row items-center text-black dark:text-white'
-                    >
+                    <div className='w-full  flex sm:flex-col flex-row items-center text-black dark:text-white
+                                    sm:h-full md:h-2/3'>
+        
                         <div className="w:1/2 flex flex-col items-start">
                             <h2 className='flex justify-start w-full text-3xl font-light 
-                                          xs:text-xl sm:text-2xl md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl'
+                                          md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl'
                             >
                                 Reframe, Rebuild, Renew:
                             </h2>
 
                             <h1 className='flex justify-start w-full text-5xl font-semibold pt-4 pb-6 
-                                          xs:text-2xl sm:text-3xl md:text-2xl lg:text-2xl xl:text-4xl 3xl:text-5xl'
+                                          md:text-2xl lg:text-2xl xl:text-4xl 3xl:text-5xl'
                             >
                                 EMDR as Your Mind's Gym
                             </h1>
 
                             <p className='flex justify-start w-full text-left leading-loose font-light
-                                          lg:text-sm xl:text-md 2xl:text-base 3xl:text-xl'
+                                          md:text-sm xl:text-md 2xl:text-base 3xl:text-xl'
                             >
                                 Healing is like building muscle — focused, intentional, and progressive.
                             </p>
                             <p className='flex justify-end w-full text-left leading-loose font-light 
-                                         lg:text-sm xl:text-md 2xl:text-base 3xl:text-xl'
+                                         md:text-sm xl:text-md 2xl:text-base 3xl:text-xl'
                             >
                                 Just as lifting weights strengthens muscles, our EMDR sessions 'work out' the brain,
                                 teaching it to process and reframe feelings about ourselves. 
@@ -64,9 +67,9 @@ const Hero = () => {
                             </div>
                         </div> 
                         <div className="w-1/2 flex justify-end
-                                        sm:w-full sm:h-fit"
+                                        xs:w-full sm:w-full"
                         >
-                            <BrainGear viewBox={isSmallScreen ? '-40 0 672 690' : '-90 0 672 690'} className='sm:h-1/2' />
+                            <BrainGear viewBox={isSmallScreen ? '-40 0 672 690' : '-90 0 672 690'} className='xs:h-full sm:h-2/3' />
                         </div>
                     </div>
                 </PageContainer>
