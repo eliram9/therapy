@@ -10,7 +10,7 @@ const Hero = () => {
     const isSmallScreen = useScreenSize();
 
     return (
-        <section className="relative w-full h-screen poppins dark:bg-black">
+        <section className="relative w-full pt-20 h-screen poppins dark:bg-black">
             <div className="absolute inset-0 w-full h-full bg-hero-background dark:z-20"></div>
             <div className="relative z-10 text-center w-full h-full xs:1/2 flex items-center justify-center">
                 <PageContainer>
@@ -18,7 +18,7 @@ const Hero = () => {
                     >
                         <div className="w:1/2 flex flex-col items-start">
                             <h2 className='flex justify-start w-full text-3xl font-light 
-                                          xs:text-xl sm:text-2xl md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl'
+                                          xs:text-base sm:text-2xl md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl'
                             >
                                 Reframe, Rebuild, Renew:
                             </h2>
