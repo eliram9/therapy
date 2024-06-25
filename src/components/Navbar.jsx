@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Logo, LightModeIcon, DarkModeIcon } from '../media/icons'
 import useThemeSwitcher from './hooks/useThemeSwitcher';
@@ -36,11 +36,30 @@ const MobileCustomLink = ({ href, title, className = "" }) => {
 const Navbar = () => {
     const [theme, toggleTheme] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null); 
 
     const handleClick = () => {
         setIsOpen(!isOpen);
     }
-  
+
+    const handleClickOutside = (event) => { 
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    }
+
+    useEffect(() => { 
+        if (isOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isOpen]);
+
     return (
         <header className='w-full px-32 py-5 flex items-center justify-between dark:black relative poppins md:px-4 lg:px-8 xl:px-12 dark:bg-black'>
 
@@ -57,10 +76,9 @@ const Navbar = () => {
                 <Logo className={theme === "dark" ? "white" : "#124C5F"} width={30} height={30} />
             </div>
 
-
             {/* Responsive menu */}
             { isOpen ? 
-                <div className='hidden z-30 lg:flex flex-col justify-between items-center fixed top-[20%] left-1/2 -translate-x-1/2 rounded-xl backdrop-blur-md 
+                <div ref={menuRef} className='hidden z-30 lg:flex flex-col justify-between items-center fixed top-[20%] left-1/2 -translate-x-1/2 rounded-xl backdrop-blur-md 
                               bg-slate-900/80 dark:bg-white/50 px-4 py-16 min-w-[80vw]' 
                 >
                     <nav className="flex flex-col items-center justify-between">
@@ -78,7 +96,7 @@ const Navbar = () => {
                                 <div className="w-full flex justify-center mb-4">
                                     <MobileCustomLink href="/" 
                                                       title="Home Page" 
-                                                      className="text-white dark:text-[#4E4C46] dark:font-normal text-md font-extralight block w-3/5" 
+                                                      className="text-white dark:text-black dark:font-normal text-md font-extralight block w-3/5" 
                                     />
                                 </div>
                                 <div className="w-full flex justify-center mb-4">

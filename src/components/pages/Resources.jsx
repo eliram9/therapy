@@ -4,25 +4,26 @@ import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 import PageContainer from '../ui-elements/PageContainer';
 import { ResourcesImage } from '../../media/icons';
+import SectionSubtitle from '../ui-elements/SectionSubtitle';
 
 const Resources = () => {
     return (
         <>
            <section>
                 <PageContainer className='text-darkGray dark:bg-black pb-32 '>
-                    <h1 className='text-4xl font-4xl font-semibold mb-8 dark:text-white'>Resources</h1>
+                    <SectionSubtitle subtitle="Resources" className="sm:my-10" />
                     <div className='flex sm:flex-col flex-row items-center justify-between'>
                     
                         {/* Image Container */}
                         <div className='w-3/6 flex justify-center xs:mb-4 md:mb-0
-                                        sm:w-full'>
-                            <ResourcesImage />
+                                        sm:w-7/12'>
+                            <ResourcesImage className='sm:h-fit' />
                         </div>
                         
                         {/* Text Container */}
                         <div className='w-3/6 flex items-center pl-10
                                         sm:w-full sm:pl-0'>
-                            <div className='sm:text-center text-left dark:text-white leading-loose font-light'>
+                            <div className='stext-left dark:text-white leading-loose font-light sm:text-md'>
                                 <ul className="list-disc list-inside">
                                 <li className="mb-2">
                                         <Link to="https://www.emdr.com/research-overview/" target="_blank"
@@ -47,7 +48,7 @@ const Resources = () => {
                                         <Link to="https://www.emdr.com/what-is-emdr-therapy-layperson/" target="_blank"
                                         c     lassName='hover:border-rounded hover:bg-main hover:text-white hover:px-3'
                                         >
-                                            https://www.emdr.com/what-is-emdr-therapy-layperson   
+                                            https://www.emdr.com/what-is-emdr-therapy   
                                         </Link>
                                     </li>
                                     <li className="mb-2">

@@ -93,16 +93,16 @@ const Footer = () => {
                 >
                     <div style={{ width: bannerWidth }} 
                          className='bg-white flex flex-row justify-between rounded-xl drop-shadow-lg border-white border border-opacity-20 px-16 py-8
-                                    sm:flex-col sm:justify-center sm:p-6'
+                                    sm:flex-col sm:justify-center sm:px-6 sm:py-4'
                     >
                         <div className='flex flex-col items-start justify-end text-3xl mb-4 sm:mb-0
-                                        xs:text-md sm:text-xl sm:items-center xl:text-2xl'
+                                         sm:text-xl sm:items-center xl:text-2xl'
                         >
                             <h3 style={firstH3}>Ready to get started?</h3>
                             <h3 style={secondH3}>Talk to us today</h3>
                         </div>
                         
-                        <div className='flex items-center text-white sm:mt-6 sm:justify-center'> 
+                        <div className='flex items-center text-white sm:mt-4 sm:justify-center'> 
                             <Link to="/contact-us"
                                   className='bg-main text-sm py-2 px-4 rounded-xl flex items-center hover:bg-[#0E3A4A]
                                               sm:py-1 xs:text-xs'
