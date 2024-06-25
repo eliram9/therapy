@@ -9,9 +9,9 @@ import ross from '../../media/ross.jpg';
 const reviewsData = [
     {
         id: 1,
-        name: "Moshe Cohen",
-        title: "Potomac, MD",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        name: "Rose",
+        title: "Ra'anana, Isreal",
+        text: "I started working with Arianne after the events of Oct 7th and suffering from severe anxiety from them.Arianne is amazing, not only is she empathetic, a great listener and has great suggestions, her EDMR was so effective at changing my thoughts around. We even touched upon other subjects and she has helped improve my life so much !",
         image: moshe
     },
     {

@@ -16,7 +16,7 @@ const Resources = () => {
                     
                         {/* Image Container */}
                         <div className='w-3/6 flex justify-center xs:mb-4 md:mb-0
-                                        sm:w-7/12'>
+                                        sm:w-3/4'>
                             <ResourcesImage className='sm:h-fit' />
                         </div>
                         

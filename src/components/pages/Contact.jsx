@@ -27,7 +27,7 @@ const Contact = () => {
                         <div className='w-5/12 flex justify-center
                                         sm:w-4/6 sm:h-fit sm:pb-3'
                         >
-                            <SendingEmail />
+                            <SendingEmail className='h-fit' />
                         </div>
                     </div>
                 </PageContainer>
