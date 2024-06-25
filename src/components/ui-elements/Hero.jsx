@@ -18,7 +18,7 @@ const Hero = () => {
                     >
                         <div className="w:1/2 flex flex-col items-start">
                             <h2 className='flex justify-start w-full text-3xl font-light 
-                                          xs:text-base sm:text-2xl md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl'
+                                          xs:text-xl sm:text-2xl md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl'
                             >
                                 Reframe, Rebuild, Renew:
                             </h2>
