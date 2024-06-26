@@ -67,7 +67,7 @@ const About = () => {
                         {/* Image Container */}
                         <div className='w-5/12 flex justify-center xs:mb-4 md:mb-0
                                         sm:w-5/6'>
-                            <Conversation />
+                            <Conversation className='h-fit'/>
                         </div>
                         
                         {/* Text Container */}
@@ -138,7 +138,7 @@ const About = () => {
 
             {/* Image Container */}
             <div className='w-5/12 flex justify-end sm:justify-center sm:w-3/4'>
-                <Payment />
+                <Payment className='h-fit'/>
             </div>
         </div>
     </PageContainer>
