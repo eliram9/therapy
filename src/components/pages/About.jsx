@@ -137,7 +137,7 @@ const About = () => {
             </div>
 
             {/* Image Container */}
-            <div className='w-5/12 flex justify-end sm:justify-center sm:w-full'>
+            <div className='w-5/12 flex justify-end sm:justify-center sm:w-11/12'>
                 <Payment className='h-auto'/>
             </div>
         </div>
