@@ -1270,6 +1270,53 @@ export const LeftArrow = ({ className = '', stroke = '#000', ...rest }) => (
   </svg>
 );
 
+// Reviews Arrows (up & down)
+export const DownArrow = ({ className = '', stroke = '#000', ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+    viewBox="0 0 24 24"
+    className={className}
+    {...rest}
+  >
+    <path
+      // stroke={stroke}
+      // strokeLinecap="round"
+      // strokeLinejoin="round"
+      // strokeWidth="1.5"
+      // d="M10 7l5 5-5 5"
+
+      fill="#0F0F0F"
+        d="M5.707 9.71a1 1 0 000 1.415l4.892 4.887a2 2 0 002.828 0l4.89-4.89a1 1 0 10-1.414-1.415l-4.185 4.186a1 1 0 01-1.415 0L7.121 9.71a1 1 0 00-1.414 0z"
+    ></path>
+  </svg>
+);
+
+export const UpArrow = ({ className = '', stroke = '#000', ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+    viewBox="0 0 24 24"
+    className={className}
+    {...rest}
+  >
+    <path
+      // stroke={stroke}
+      // strokeLinecap="round"
+      // strokeLinejoin="round"
+      // strokeWidth="1.5"
+      // d="M10 7l5 5-5 5"'
+
+      fill="#0F0F0F"
+      d="M18.293 15.29a1 1 0 000-1.415L13.4 8.988a2 2 0 00-2.828 0l-4.89 4.89a1 1 0 101.414 1.415l4.185-4.186a1 1 0 011.415 0l4.182 4.182a1 1 0 001.414 0z"
+    ></path>
+  </svg>
+);
+
 /// === --- END HOME PAGE  --- === \\\
 
 
