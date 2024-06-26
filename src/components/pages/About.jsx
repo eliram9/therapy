@@ -61,19 +61,19 @@ const About = () => {
 
             <section>
                 <PageContainer className='text-darkGray dark:bg-black pb-32'>
-                    <SectionSubtitle subtitle="What To Expect?" className="mb-20" />
+                    <SectionSubtitle subtitle="What To Expect?" className="mb-20 sm:mb-4" />
                     <div className='flex sm:flex-col flex-row items-center justify-between'>
                     
                         {/* Image Container */}
                         <div className='w-5/12 flex justify-center xs:mb-4 md:mb-0
-                                        sm:w-full'>
+                                        sm:w-5/6'>
                             <Conversation />
                         </div>
                         
                         {/* Text Container */}
                         <div className='w-7/12 flex items-center pl-10
                                         sm:w-full sm:pl-0'>
-                            <div className='sm:text-left text-left dark:text-white leading-loose font-light'>
+                            <div className='sm:text-left text-left dark:text-white leading-loose font-light sm:text-sm'>
                                 <p className='leading-loose'>You can expect a professional, supportive, and secure environment for healing, accessible from the comfort of your home.</p> 
                                 <p>Sessions are conducted via a secure video conferencing platform, ensuring privacy and convenience. 
                                 </p>
@@ -96,13 +96,13 @@ const About = () => {
 
             <section>
     <PageContainer className='text-darkGray dark:bg-black pb-28'>
-        <SectionSubtitle subtitle="Payment and Scheduling" className="items-center mb-20" />
+        <SectionSubtitle subtitle="Payment and Scheduling" className="items-center mb-20 sm:mb-4" />
         <div className='flex sm:flex-col-reverse md:flex-row items-center justify-between'>
 
             {/* Text Container */}
             <div className='w-7/12 flex items-start text-darkGray pr-10 sm:w-full'>
                 <div className='sm:text-center text-left dark:text-white leading-loose font-light'>
-                    <div className='sm:text-left text-left dark:text-white leading-loose'>
+                    <div className='sm:text-left text-left dark:text-white leading-loose sm:text-sm'>
                         <p className='leading-loose font-light'>
                             Please note that I am not part of any insurance panels and am therefore considered an
                             “out-of-network provider.” If you wish to be reimbursed by your insurance carrier, please contact your insurance provider to determine
@@ -137,7 +137,7 @@ const About = () => {
             </div>
 
             {/* Image Container */}
-            <div className='w-5/12 flex justify-end sm:w-full'>
+            <div className='w-5/12 flex justify-end sm:justify-center sm:w-3/4'>
                 <Payment />
             </div>
         </div>

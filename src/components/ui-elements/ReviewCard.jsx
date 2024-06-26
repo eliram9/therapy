@@ -29,13 +29,13 @@ const ReviewCard = ({ title, name, text, image }) => {
                     {isExpanded ? text : (text.length > 150 ? text.slice(0, 150) + '...' : text)}
                 </p>
             </div>
-            <div className='w-full flex justify-between items-center mt-2 mb-2'>
+            <div className='w-full flex justify-between items-center'>
                 <div className='flex flex-col justify-start items-start'>
                     <p className='truncate mt-2 text-main dark:text-white'>{name}</p>
                     <p className='text-xs text-gray-500 dark:text-mint mb-2'>{title}</p>
                 </div>
                 {text.length > 150 ? (
-                    <button className='bg-lightGray text-darkGray border border-darkGray text-xs font-light rounded-full p-1' onClick={handleReadMoreClick}>
+                    <button className='bg-lightGray text-darkGray border border-darkGray text-xs font-light rounded-full ' onClick={handleReadMoreClick}>
                         {isExpanded ? <UpArrow /> : <DownArrow /> }
                     </button>
                 ) : null}

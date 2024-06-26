@@ -52,8 +52,8 @@ const Footer = () => {
         <footer className="text-main text-center bottom-0 w-full py-5 bg-gradient-to-b from-lightGray to-blue poppins">    
             <div className='w-full pt-[150px] justify-center bg-gradient-to-b from-lightGray to-blue relative z-20 py-0'>
                 <div className="md:flex md:flex-col grid grid-cols-3 gap-1 xs:gap-4">
-                <Link className='flex items-center justify-center'  to="/" >
-                            <Logo className={"#124C5F"} alt="logo"  />
+                <Link className='flex items-center justify-center mb-6'  to="/" >
+                            <Logo className={"#124C5F"} alt="logo" width={25} />
                             <span className="text-[26px] md:text-base text-main ml-1 font-extralight dark:text-white">
                                 Big
                                 <span className='font-normal'>
@@ -62,28 +62,28 @@ const Footer = () => {
                             </span>
                         </Link>   
 
-                    
-                    
-                    <div className="flex justify-center bg-red200">
-                        {/* <div className="flex flex-col ml-10 text-sm items-start xs:justify-between"> */}
-                        <div className="flex flex-col ml-10 text-sm items-start xs:justify-between">   
+                        <div>
+                            <div className="flex flex-col md:flex-row ml-10 justify-around w-full text-sm items-center
+                                            md:ml-0"
+                            >
+                                <div className="flex items-center">
+                                    <Phone fill="#124C5F" />
+                                    <p className="leading-10">+1 (301)-337-5676</p>
+                                </div>
+                                <div className="flex items-center">
+                                    <Envelope fill="#124C5F" />
+                                    <p className="leading-10">info@bigbrain.com</p>
+                                </div>
+                            </div>   
+                        </div>
 
-                            <div className="flex items-center">
-                                <Phone fill="#124C5F" />
-                                <p className="leading-10">+1 (301)-337-5676</p>
-                            </div>
-                            <div className="flex items-center">
-                                <Envelope fill="#124C5F" />
-                                <p className="leading-10">info@bigbrain.com</p>         
-                            </div>
-                        </div>   
-                    </div>
-
-                    <div className="flex justify-center items-center ">
-                        <div className="flex flex-col text-sm items-center sm:grid sm:grid-cols-3">
+                    <div>
+                        <div className="flex flex-col md:flex-row ml-10 justify-around w-full text-sm items-center
+                                            md:ml-0">
                             <Link to="/about" className="leading-5">About</Link>
                             <Link to="/emdr" className="leading-5">EMDR</Link>
                             <Link to="/resources" className="leading-5">Resources</Link>
+                            <Link to="/contact-us" className="leading-5">Contact </Link>
                         </div>   
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const Footer = () => {
                     </div>
                 </div> 
 
-                <div className='flex h-auto justify-center items-end py-5 z-20'>
+                <div className='flex h-auto justify-center items-end py-5 px-2 z-20'>
                     <div className='w-[1400px] py-7 px-5 leading-10 border border-red-200 rounded-xl bg-white bg-opacity-[35%]'>
                         <div className='flex justify-center mb-2'>
                             <Danger fill='#fda4af' />
