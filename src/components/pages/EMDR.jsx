@@ -10,15 +10,15 @@ const EMDR = () => {
     return (
         <>
             <section className='relative w-full h-auto'>
-                <HeroGrayBackground className="absolute inset-0 w-full h-full" />
+                <HeroGrayBackground className="absolute  inset-0 w-full h-full" />
                 <PageContainer className='relative z-10 text-darkGray dark:bg-black pb-32'>
                     <SectionSubtitle subtitle="What is EMDR?" className="mb-20 sm:mb-4" />
                     <div className='flex sm:flex-col flex-row items-center justify-between'>
                     
                         {/* Image Container */}
-                        <div className='w-1/2 flex justify-start
-                                        sm:w-5/6'>
-                            <Factory className='h-auto'/>
+                        <div className='w-1/2 flex justify-start bg-red-200 sm:h-1/2
+                                        sm:w-11/12 '>
+                            <Factory className='h-auto' />
                         </div>
                         
                         {/* Text Container */}
