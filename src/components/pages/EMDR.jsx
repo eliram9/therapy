@@ -10,7 +10,7 @@ const EMDR = () => {
     return (
         <>
             <section className='relative w-full h-auto'>
-                <HeroGrayBackground className="absolute  inset-0 w-full h-full" />
+                <HeroGrayBackground className="absolute inset-0 w-full h-full" />
                 <PageContainer className='relative z-10 text-darkGray dark:bg-black pb-32'>
                     <SectionSubtitle subtitle="What is EMDR?" className="mb-20 sm:mb-4" />
                     <div className='flex sm:flex-col flex-row items-center justify-between'>
@@ -44,13 +44,9 @@ const EMDR = () => {
                      </div>
                 </PageContainer>
             </section>
- 
 
-            
-
-            
             <section>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center py-10">
                     <QuoteBox 
                         qoute="The goal of EMDR therapy is trait change so that the negative emotions and sensations will no longer habitually arise." 
                         author="Francine Shapiro, Florence W. Kaslow & Louise Maxfield"
@@ -59,35 +55,37 @@ const EMDR = () => {
             </section>
 
             <section>
-                <div className='w-full text-darkGray'>
-                    <div className='relative w-full overflow-hidden flex items-center justify-center h-[700px]'>
-                        <PageContainer className="z-10">
-                            <div className='flex justify-between items-center'>
-                                <div className='w-1/2 pl-10'>
-                                    <div>
-                                        <h2 className='text-4xl font-4xl font-semibold mb-8 tracking-text'>Is EMDR Right for Me?</h2>
-                                        <p className='leading-loose font-light'>Most people associate trauma with harrowing events like war or a natural disaster. 
-                                        However, any distressing event that falls beyond the scope of normal human experience can be considered traumatic.<br /> 
-                                        Evidence now concludes that repeated exposure to little “t” traumas can cause more emotional harm than exposure to a 
-                                        single big “T” traumatic event.</p>
-                                        <br />
-                                        <p className='leading-loose font-light'>Empathy and acceptance for the impact of little “t” traumas can be harder to garner 
-                                        because of the common misconception that these events are less significant than life-threatening emergencies. Minimizing 
-                                        the impact of these little “t” incidents can create adverse coping behaviors such as bottling up emotions or attempting 
-                                        to manage symptoms without support.</p>
-                                        <br/ >
-                                        <p className='leading-loose font-light'>If you have had any little t trauma, EMDR could be a great fit for you. It can 
-                                        decrease the feelings of depression, anxiety, OCD, and PTSD.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className='w-1/2 flex justify-center'>
-                                    <GirlsPuzzle />
+                <PageContainer className='text-darkGray dark:bg-black pb-28'>
+                    <SectionSubtitle subtitle="Payment and Scheduling" className="items-center mb-20 sm:mb-4" />
+                    <div className='flex sm:flex-col-reverse md:flex-row items-center justify-between'>
+
+                        {/* Text Container */}
+                        <div className='w-7/12 flex items-start text-darkGray pr-10 sm:w-full'>
+                            <div className='sm:text-center text-left dark:text-white leading-loose font-light'>
+                                <div className='sm:text-left text-left dark:text-white leading-loose sm:text-sm'>
+                                    <p className='leading-loose font-light'>Most people associate trauma with harrowing events like war or a natural disaster. 
+                                    However, any distressing event that falls beyond the scope of normal human experience can be considered traumatic.<br /> 
+                                    Evidence now concludes that repeated exposure to little “t” traumas can cause more emotional harm than exposure to a 
+                                    single big “T” traumatic event.</p>
+                                    <br />
+                                    <p className='leading-loose font-light'>Empathy and acceptance for the impact of little “t” traumas can be harder to garner 
+                                    because of the common misconception that these events are less significant than life-threatening emergencies. Minimizing 
+                                    the impact of these little “t” incidents can create adverse coping behaviors such as bottling up emotions or attempting 
+                                    to manage symptoms without support.</p>
+                                    <br/ >
+                                    <p className='leading-loose font-light'>If you have had any little t trauma, EMDR could be a great fit for you. It can 
+                                    decrease the feelings of depression, anxiety, OCD, and PTSD.
+                                    </p>
                                 </div>
                             </div>
-                        </PageContainer>
+                        </div>
+
+                        {/* Image Container */}
+                        <div className='w-5/12 flex justify-end sm:justify-center sm:w-10/12 sm:py-5'>
+                            <GirlsPuzzle className='h-auto'/>
+                        </div>
                     </div>
-                </div>
+                </PageContainer>
             </section>
         </>
     );

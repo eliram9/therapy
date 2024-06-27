@@ -3444,8 +3444,8 @@ export const Factory = ({ className="", ...rest }) => (
 export const GirlsPuzzle = ({ className="", ...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="605"
-  height="294"
+  width="100%"
+  height="100%"
   fill="none"
   viewBox="0 0 605 294"
   {...rest}
