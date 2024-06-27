@@ -16,7 +16,7 @@ const EMDR = () => {
                     <div className='flex sm:flex-col flex-row items-center justify-between'>
                     
                         {/* Image Container */}
-                        <div className='w-1/2 flex justify-start bg-red-200 sm:h-1/2
+                        <div className='w-1/2 flex justify-start sm:h-1/2
                                         sm:w-11/12 '>
                             <Factory className='h-auto' />
                         </div>
