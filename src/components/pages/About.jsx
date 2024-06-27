@@ -95,55 +95,54 @@ const About = () => {
             </section>
 
             <section>
-    <PageContainer className='text-darkGray dark:bg-black pb-28'>
-        <SectionSubtitle subtitle="Payment and Scheduling" className="items-center mb-20 sm:mb-4" />
-        <div className='flex sm:flex-col-reverse md:flex-row items-center justify-between'>
+                    <PageContainer className='text-darkGray dark:bg-black pb-28'>
+                        <SectionSubtitle subtitle="Payment and Scheduling" className="items-center mb-20 sm:mb-4" />
+                        <div className='flex sm:flex-col-reverse md:flex-row items-center justify-between'>
 
-            {/* Text Container */}
-            <div className='w-7/12 flex items-start text-darkGray pr-10 sm:w-full'>
-                <div className='sm:text-center text-left dark:text-white leading-loose font-light'>
-                    <div className='sm:text-left text-left dark:text-white leading-loose sm:text-sm'>
-                        <p className='leading-loose font-light'>
-                            Please note that I am not part of any insurance panels and am therefore considered an
-                            “out-of-network provider.” If you wish to be reimbursed by your insurance carrier, please contact your insurance provider to determine
-                        </p>
-                        <ul className='font-normal'>
-                            <li>(1) the type and amount of mental health coverage available to you</li>
-                            <li>(2) the coverage for out of network providers</li>
-                            <li>(3) if there is an annual deductible you must meet</li>
-                            <li>(4) and if a note from your physician is required indicating your need for therapy</li>
-                        </ul>
-                        <br />
-                        <p>
-                            <span className='text-main font-medium'>*</span>
-                            Please note, I will provide you a superbill after each session with the following information 
-                            that you can submit to your insurance company for reimbursement for any out-of-network benefits you might have:
-                        </p>
-                        <ul className='font-normal'>
-                            <li>(1) the type and amount of mental health coverage available to you</li>
-                            <li>(2) the coverage for out of network providers</li>
-                            <li>(3) if there is an annual deductible you must meet</li>
-                            <li>(4) and if a note from your physician is required indicating your need for therapy</li>
-                        </ul>
-                        <br />
-                        <p>
-                            Appointment Information
-                            I offer individual psychotherapy to adults ages 18 and over in English.
-                            At this time, I am exclusively offering daytime telehealth services.
-                            You can schedule a 20 minute free consultation or schedule an appointment directly on my calendar through this link.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                            {/* Text Container */}
+                            <div className='w-7/12 flex items-start text-darkGray pr-10 sm:w-full'>
+                                <div className='sm:text-center text-left dark:text-white leading-loose font-light'>
+                                    <div className='sm:text-left text-left dark:text-white leading-loose sm:text-sm'>
+                                        <p className='leading-loose font-light'>
+                                            Please note that I am not part of any insurance panels and am therefore considered an
+                                            “out-of-network provider.” If you wish to be reimbursed by your insurance carrier, please contact your insurance provider to determine
+                                        </p>
+                                        <ul className='font-normal'>
+                                            <li>(1) the type and amount of mental health coverage available to you</li>
+                                            <li>(2) the coverage for out of network providers</li>
+                                            <li>(3) if there is an annual deductible you must meet</li>
+                                            <li>(4) and if a note from your physician is required indicating your need for therapy</li>
+                                        </ul>
+                                        <br />
+                                        <p>
+                                            <span className='text-main font-medium'>*</span>
+                                            Please note, I will provide you a superbill after each session with the following information 
+                                            that you can submit to your insurance company for reimbursement for any out-of-network benefits you might have:
+                                        </p>
+                                        <ul className='font-normal'>
+                                            <li>(1) the type and amount of mental health coverage available to you</li>
+                                            <li>(2) the coverage for out of network providers</li>
+                                            <li>(3) if there is an annual deductible you must meet</li>
+                                            <li>(4) and if a note from your physician is required indicating your need for therapy</li>
+                                        </ul>
+                                        <br />
+                                        <p>
+                                            Appointment Information
+                                            I offer individual psychotherapy to adults ages 18 and over in English.
+                                            At this time, I am exclusively offering daytime telehealth services.
+                                            You can schedule a 20 minute free consultation or schedule an appointment directly on my calendar through this link.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-            {/* Image Container */}
-            <div className='w-5/12 flex justify-end sm:justify-center sm:w-11/12'>
-                <Payment className='h-auto'/>
-            </div>
-        </div>
-    </PageContainer>
-</section>
-
+                            {/* Image Container */}
+                            <div className='w-5/12 flex justify-end sm:justify-center sm:w-11/12'>
+                                <Payment className='h-auto'/>
+                            </div>
+                        </div>
+                    </PageContainer>
+                </section>
             <Footer />        
         </>
     )
