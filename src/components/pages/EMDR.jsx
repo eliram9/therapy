@@ -4,6 +4,7 @@ import TextCard from '../ui-elements/TextCard'; // This import doesn't seem to b
 import { Factory, GirlsPuzzle, HeroGrayBackground, CC, Payment } from '../../media/icons';
 import QuoteBox from '../ui-elements/QuoteBox';
 import SectionSubtitle from '../ui-elements/SectionSubtitle';
+import Footer from '../Footer';
 
 
 const EMDR = () => {
@@ -87,6 +88,7 @@ const EMDR = () => {
                     </div>
                 </PageContainer>
             </section>
+            <Footer />
         </>
     );
 }
