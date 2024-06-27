@@ -56,7 +56,7 @@ const EMDR = () => {
 
             <section>
                 <PageContainer className='text-darkGray dark:bg-black pb-28'>
-                    <SectionSubtitle subtitle="Payment and Scheduling" className="items-center mb-20 sm:mb-4" />
+                    <SectionSubtitle subtitle="Is EMDR Right For ME?" className="items-center mb-20 sm:mb-4" />
                     <div className='flex sm:flex-col-reverse md:flex-row items-center justify-between'>
 
                         {/* Text Container */}

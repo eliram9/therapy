@@ -35,7 +35,11 @@ const QouteBox = ({ qoute, author }) => {
                             xs:w-72 sm:w-72'
             >
                 <Qoutes className='w-40 absolute -left-10 top-[-48%] flex justify-center xs:w-20 lg:w-28 xl:w-32'/>
-                <h3 className='text-2xl font-thin mb-4 italic pt-8 px-16 text-center z-10 xs:text-xl lg:text-base'>{qoute}</h3>
+                <h3 className='text-2xl font-thin mb-4 italic pt-8 px-16 text-center z-10 
+                               xs:text-xl sm:font-light lg:text-base'
+                >
+                    {qoute}
+                </h3>
                 <h4 className='text-center mb-8 xs:text-sm'>{author}</h4>
             </div>
         </div>
