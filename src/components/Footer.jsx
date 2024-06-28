@@ -54,7 +54,7 @@ const Footer = () => {
                 <div className="md:flex md:flex-col grid grid-cols-3 gap-1 xs:gap-4">
                 <Link className='flex items-center justify-center mb-6'  to="/" >
                             <Logo className={"#124C5F"} alt="logo" width={25} />
-                            <span className="text-[26px] md:text-base text-main ml-1 font-extralight dark:text-white">
+                            <span className="text-[26px] md:text-base text-main ml-1 font-extralight dark:text-main">
                                 Big
                                 <span className='font-normal'>
                                     Brain

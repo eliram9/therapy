@@ -49,7 +49,7 @@ const ContactFooter = () => {
       }, []);
 
     return (
-        <footer className="text-main text-center bottom-0 w-full poppins">    
+        <footer className="text-main text-center bottom-0 poppins">    
             <div className='w-full pt-[150px] justify-center bg-gradient-to-b from-white to-blue relative z-20 py-0'>
                 <div className="md:flex md:flex-col grid grid-cols-3 gap-1 xs:gap-4">
                 <Link className='flex items-center justify-center mb-6'  to="/" >

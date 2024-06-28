@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <>
             <section className="relative">
-                <PageContainer className='relative z-10 text-darkGray dark:bg-black pb-40'>
+                <PageContainer className='relative z-10 text-darkGray dark:bg-black pb-10'>
                     <SectionSubtitle subtitle="Ask Me Anything" className="sm:my-10" />
                     
                     {/* Background container for form and image */}

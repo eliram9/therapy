@@ -41,8 +41,6 @@ code {
     min-width: 25%; /* 100% divided by the number of slides to show */
     padding: 0.5rem 0;
   }
-
-  
   
   .embla__button {
     cursor: pointer;
@@ -57,4 +55,18 @@ code {
     width: 24px;
     height: 24px;
   }
+
+/* Sectionsubtitle */
+:root {
+  --underline-color-light: #124C5F;
+  --underline-color-dark: #FFEE94; 
+}
+
+.dark {
+  --underline-color: var(--underline-color-dark);
+}
+
+.light {
+  --underline-color: var(--underline-color-light);
+}
   

@@ -1,6 +1,6 @@
 import React from 'react';
+
 import PageContainer from '../ui-elements/PageContainer';
-import TextCard from '../ui-elements/TextCard'; // This import doesn't seem to be used.
 import { Factory, GirlsPuzzle, HeroGrayBackground } from '../../media/icons';
 import QuoteBox from '../ui-elements/QuoteBox';
 import SectionSubtitle from '../ui-elements/SectionSubtitle';
@@ -47,7 +47,7 @@ const EMDR = () => {
             </section>
 
             <section>
-                <div className="flex justify-center items-center py-10">
+                <div className="flex justify-center items-center py-10 dark:bg-black">
                     <QuoteBox 
                         qoute="The goal of EMDR therapy is trait change so that the negative emotions and sensations will no longer habitually arise." 
                         author="Francine Shapiro, Florence W. Kaslow & Louise Maxfield"
