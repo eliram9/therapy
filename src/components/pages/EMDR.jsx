@@ -1,7 +1,7 @@
 import React from 'react';
 import PageContainer from '../ui-elements/PageContainer';
 import TextCard from '../ui-elements/TextCard'; // This import doesn't seem to be used.
-import { Factory, GirlsPuzzle, HeroGrayBackground, CC, Payment } from '../../media/icons';
+import { Factory, GirlsPuzzle, HeroGrayBackground } from '../../media/icons';
 import QuoteBox from '../ui-elements/QuoteBox';
 import SectionSubtitle from '../ui-elements/SectionSubtitle';
 import Footer from '../Footer';
