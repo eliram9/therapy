@@ -5,6 +5,7 @@ import Footer from '../Footer';
 import PageContainer from '../ui-elements/PageContainer';
 import { ResourcesImage } from '../../media/icons';
 import SectionSubtitle from '../ui-elements/SectionSubtitle';
+import FooterNew from '../FooterNew';
 
 const Resources = () => {
     return (
@@ -104,7 +105,7 @@ const Resources = () => {
                     </div>
                 </PageContainer>
             </section>
-            <Footer />
+            <FooterNew />
         </>
     )
 }

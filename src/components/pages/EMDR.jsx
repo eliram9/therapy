@@ -4,7 +4,8 @@ import PageContainer from '../ui-elements/PageContainer';
 import { Factory, GirlsPuzzle, HeroGrayBackground } from '../../media/icons';
 import QuoteBox from '../ui-elements/QuoteBox';
 import SectionSubtitle from '../ui-elements/SectionSubtitle';
-import Footer from '../Footer';
+import FooterNew from '../FooterNew';
+
 
 
 const EMDR = () => {
@@ -88,7 +89,7 @@ const EMDR = () => {
                     </div>
                 </PageContainer>
             </section>
-            <Footer />
+            <FooterNew />
         </>
     );
 }

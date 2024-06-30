@@ -54,7 +54,7 @@ const ContactFooter = () => {
                 <div className="md:flex md:flex-col grid grid-cols-3 gap-1 xs:gap-4">
                 <Link className='flex items-center justify-center mb-6'  to="/" >
                             <Logo className={"#124C5F"} alt="logo" width={25} />
-                            <span className="text-[26px] md:text-base text-main ml-1 font-extralight dark:text-white">
+                            <span className="text-[26px] md:text-base text-main ml-1 font-extralight dark:text-main">
                                 Big
                                 <span className='font-normal'>
                                     Brain
@@ -63,7 +63,7 @@ const ContactFooter = () => {
                         </Link>   
 
                         <div>
-                            <div className="flex flex-row ml-10 justify-around w-full text-sm items-center
+                            <div className="flex sm:flex-col flex-row ml-10 justify-around w-full text-sm items-center
                                             md:ml-0"
                             >
                                 <div className="flex items-center">
@@ -72,7 +72,7 @@ const ContactFooter = () => {
                                 </div>
                                 <div className="flex items-center">
                                     <Envelope fill="#124C5F" />
-                                    <p className="leading-10">info@bigbrain.com</p>
+                                    <p className="leading-10">info@bigbraintherapy.com</p>
                                 </div>
                             </div>   
                         </div>
@@ -90,16 +90,16 @@ const ContactFooter = () => {
 
 
                 <div className='flex h-auto justify-center items-end py-5 px-2 z-20'>
-                    <div className='w-[1400px] py-7 px-5 leading-10 border border-red-200 rounded-xl bg-white bg-opacity-[35%]'>
+                    <div className='w-[1400px] py-7 px-5 border border-red-200 rounded-xl bg-white bg-opacity-[35%]'>
                         <div className='flex justify-center mb-2'>
                             <Danger fill='#fda4af' />
                         </div>
-                        <p className='leading-10 font-medium text-sm'>Amma Lucy LLC and or BigBrain is not a crisis facility.</p>
-                        <p className='font-medium text-sm'>Amma Lucy LLC and or BigBrain does not provide emergency services.</p>
+                        <p className='font-medium py-2 text-sm xs:text-xs'>Amma Lucy LLC and or BigBrain is not a crisis facility.</p>
+                        <p className='font-medium pb-2 text-sm xs:text-xs'>Amma Lucy LLC and or BigBrain does not provide emergency services.</p>
                         <p className='leading-5 font-light text-sm'>If you or someone you know is experiencing a mental health crisis, please call or text 988 at any 
                             time to be connected to a trained crisis counselor. If you’re looking to find an incredible therapist 
                             for ongoing proactive mental health care, you got to the right place, take a deep breath and get 
-                            connected today!.</p>
+                            connected today!</p>
                     </div>           
                 </div>
 

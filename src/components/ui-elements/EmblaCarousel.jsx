@@ -74,7 +74,7 @@ const EmblaCarousel = () => {
             <button
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={`w-4 h-4 rounded-full  ${index === selectedIndex ? 'bg-main dark:bg-pink' : 'bg-gray-300'} hover:bg-mint`}
+              className={`w-4 h-4 rounded-full  ${index === selectedIndex ? 'bg-main dark:bg-banana' : 'bg-gray-300'} hover:bg-mint`}
             />
           ))}
         </div>

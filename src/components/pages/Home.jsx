@@ -7,6 +7,7 @@ import HelpYou from '../ui-elements/HelpYou';
 import { YellowShape } from '../../media/icons';
 import Reviews from '../ui-elements/Reviews';
 import Footer from '../Footer';
+import FooterNew from '../FooterNew';
 
 
 const Home = () => {
@@ -19,7 +20,8 @@ const Home = () => {
                 <HelpYou />
                 <Reviews /> 
             </PageContainer>
-            <Footer />
+            {/* <Footer /> */}
+            <FooterNew />
         </section>  
     )
 }

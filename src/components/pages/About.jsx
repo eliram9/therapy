@@ -6,7 +6,7 @@ import Ari from '../../media/Ari.svg'
 import { Conversation, Payment } from '../../media/icons';
 import QouteBox from '../ui-elements/QuoteBox';
 import SectionSubtitle from '../ui-elements/SectionSubtitle';
-import Footer from '../Footer';
+import FooterNew from '../FooterNew';
 
 const About = () => {
     return (
@@ -143,7 +143,7 @@ const About = () => {
                         </div>
                     </PageContainer>
                 </section>
-            <Footer />        
+            <FooterNew />>       
         </>
     )
 }
