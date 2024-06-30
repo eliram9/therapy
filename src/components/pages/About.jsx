@@ -143,7 +143,7 @@ const About = () => {
                         </div>
                     </PageContainer>
                 </section>
-            <FooterNew />>       
+            <FooterNew />     
         </>
     )
 }
