@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
+import { ContactUs } from '../../media/icons';
+
 const ContactForm = () => {
   const [formInputs, setFormInputs] = useState({
     first_name: '',
@@ -94,10 +96,11 @@ const ContactForm = () => {
                 </div>
                 
                 <button type="submit"
-                        className='w-full bg-main text-white font-medium py-3 rounded-md border-2 hover:bg-white hover:text-main hover:font-normal
-                                   md:text-md'
+                        className='w-full flex justify-center bg-main text-white font-regular pt-3 pb-[10px] rounded-md border-transparent hover:bg-[#0E3A4A]  hover:text-white hover:font-normal
+                                   md:text-md sm:border-white '
                 >
                     Send
+                    <ContactUs className=' md:h-[22px] ml-2' />
                 </button>
             </form>
         </div>

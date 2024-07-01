@@ -59,7 +59,7 @@ module.exports = {
 
             lg: { max: "1023px" }, // Tablets and smaller laptops
 
-            md: { max: "767px" }, // Tablets and smaller laptops
+            md: { max: "768px" }, // Tablets and smaller laptops
  
             sm: { max: "639px" }, // Larger mobile devices
 

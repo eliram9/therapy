@@ -9,7 +9,7 @@ import ContactFooter from '../ContactFooter';
 const Contact = () => {
     return (
         <>
-            <section className="relative">
+            <section className="relative pt-10">
                 <PageContainer className='relative z-10 text-darkGray dark:bg-black pb-10'>
                     <SectionSubtitle subtitle="Ask Me Anything" className="sm:my-10" />
                     
