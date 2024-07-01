@@ -11,7 +11,7 @@ import FooterNew from '../FooterNew';
 const EMDR = () => {
     return (
         <>
-            <section className='relative w-full h-auto'>
+            <section className='relative w-full h-auto pt-10'>
                 <HeroGrayBackground className="absolute inset-0 w-full h-full" />
                 <PageContainer className='relative z-10 text-darkGray dark:bg-black pb-32'>
                     <SectionSubtitle subtitle="What is EMDR?" className="mb-20 sm:mb-4" />

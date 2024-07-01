@@ -43,7 +43,7 @@ const ContactForm = () => {
                             onChange={handleChange} 
                             required 
                             placeholder='First Name'
-                            className='border-main border-2 rounded-md w-full px-2 p-2'
+                            className='border-main border-2 rounded-md w-full px-2 p-2 dark:border-white'
                         />
                     </div>
                     <div className='w-full pb-10'>
@@ -53,7 +53,7 @@ const ContactForm = () => {
                             onChange={handleChange} 
                             placeholder='Last Name'
                             required 
-                            className='border-main border-2 rounded-md w-full px-2 p-2'
+                            className='border-main border-2 rounded-md w-full px-2 p-2 dark:border-white'
                         />
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                             onChange={handleChange} 
                             placeholder='Email Address'
                             required 
-                            className='border-main border-2 rounded-md w-full px-2 p-2'
+                            className='border-main border-2 rounded-md w-full px-2 p-2 dark:border-white'
                         />
                     </div>
                     <div className='w-full pb-10'>
@@ -78,7 +78,7 @@ const ContactForm = () => {
                             onChange={handleChange} 
                             placeholder='Phone Number'
                             required 
-                            className='border-main border-2 rounded-md w-full px-2 p-2'
+                            className='border-main border-2 rounded-md w-full px-2 p-2 dark:border-white'
                         />
                     </div>
                 </div>
@@ -89,12 +89,12 @@ const ContactForm = () => {
                             value={formInputs.message} 
                             onChange={handleChange} 
                             rows={3}
-                            className='border-main border-2 rounded-md w-full px-2 p-2 lg:text-sm'>
+                            className='border-main border-2 rounded-md w-full px-2 p-2 lg:text-sm dark:border-white'>
                     </textarea>
                 </div>
                 
                 <button type="submit"
-                        className='w-full bg-main text-white py-3 rounded-md border-2 border-main hover:bg-white hover:text-main hover:font-normal
+                        className='w-full bg-main text-white font-medium py-3 rounded-md border-2 hover:bg-white hover:text-main hover:font-normal
                                    md:text-md'
                 >
                     Send

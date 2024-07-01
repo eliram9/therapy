@@ -19,7 +19,7 @@ const About = () => {
                                         sm:w-full'>
                             <div className='sm:text-center text-left dark:text-white'>
                                 <h1 className='text-4xl font-4xl font-semibold mb-8'>Hi, I'm Arianne</h1>
-                                <p className='leading-loose'>I’m glad that we’ve found each other. I am a licensed certified social worker – clinical in Maryland, Virginia, and Arizona.</p>
+                                <p className='leading-relaxed'>I’m glad that we’ve found each other. I am a licensed certified social worker – clinical in Maryland, Virginia, and Arizona.</p>
                             </div>
                         </div>
                         
@@ -33,7 +33,7 @@ const About = () => {
             </section>
 
             <section className='dark:bg-black pt-10'>
-                <PageContainer className='text-darkGray flex justify-end w-full text-left leading-loose 
+                <PageContainer className='text-darkGray flex justify-end w-full text-left leading-relaxed 
                                          lg:text-sm xl:text-md 2xl:text-base 3xl:text-xl dark:text-white dark:font-light'>
                     <p>I offer individual psychotherapy to adults ages 18 and over and have been partnering with individuals for 12 years, navigating the challenges, celebrating the victories, 
                        and working towards the life each person hopes for themselves.
@@ -73,8 +73,8 @@ const About = () => {
                         {/* Text Container */}
                         <div className='w-7/12 flex items-center pl-10
                                         sm:w-full sm:pl-0'>
-                            <div className='sm:text-left text-left dark:text-white leading-loose font-light sm:text-sm'>
-                                <p className='leading-loose'>You can expect a professional, supportive, and secure environment for healing, accessible from the comfort of your home.</p> 
+                            <div className='sm:text-left text-left dark:text-white leading-relaxed font-light sm:text-sm'>
+                                <p className='leading-relaxed'>You can expect a professional, supportive, and secure environment for healing, accessible from the comfort of your home.</p> 
                                 <p>Sessions are conducted via a secure video conferencing platform, ensuring privacy and convenience. 
                                 </p>
                                 <p>Your therapist will guide you through the EMDR process, 
@@ -101,9 +101,9 @@ const About = () => {
 
                             {/* Text Container */}
                             <div className='w-7/12 flex items-start text-darkGray pr-10 sm:w-full'>
-                                <div className='sm:text-center text-left dark:text-white leading-loose font-light'>
-                                    <div className='sm:text-left text-left dark:text-white leading-loose sm:text-sm'>
-                                        <p className='leading-loose font-light'>
+                                <div className='sm:text-center text-left dark:text-white leading-relaxed font-light'>
+                                    <div className='sm:text-left text-left dark:text-white leading-relaxed sm:text-sm'>
+                                        <p className='leading-relaxed font-light'>
                                             Please note that I am not part of any insurance panels and am therefore considered an
                                             “out-of-network provider.” If you wish to be reimbursed by your insurance carrier, please contact your insurance provider to determine
                                         </p>

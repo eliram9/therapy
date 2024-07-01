@@ -10,7 +10,7 @@ import FooterNew from '../FooterNew';
 const Resources = () => {
     return (
         <>
-           <section>
+           <section className='pt-10'>
                 <PageContainer className='text-darkGray dark:bg-black pb-32 '>
                     <SectionSubtitle subtitle="Resources" className="sm:my-10" />
                     <div className='flex sm:flex-col flex-row items-center justify-between'>

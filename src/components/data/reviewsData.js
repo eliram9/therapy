@@ -1,7 +1,7 @@
 import woman1 from '../../media/woman1.jpg';
-import john from '../../media/john.jpeg';
+import man1 from '../../media/man1.jpg';
 import woman2 from '../../media/woman2.jpg';
-import dave from '../../media/dave.jpeg';
+import woman3 from '../../media/woman3.jpg';
 import rachel from '../../media/rachel.jpg';
 import ross from '../../media/ross.jpg';
 
@@ -16,10 +16,10 @@ const reviewsData = [
     },
     {
         id: 2,
-        name: "John Smith",
-        title: "Ashdod, Israel",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        image: john
+        name: "Jason",
+        title: "Arlington, VA",
+        text: "Working with Arianne has been a life-changing experience. Her expertise in EMDR therapy has helped me navigate through some of the darkest periods of my life. Arianne’s empathetic nature and practical advice have been instrumental in my recovery. I feel more empowered and at peace thanks to her guidance and support.",
+        image: man1
     },
     {
         id: 3,
@@ -30,25 +30,25 @@ const reviewsData = [
     },
     {
         id: 4,
-        name: "Dave Larry",
-        title: "Arlington, VA",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        image: dave
+        name: "Jeniffer",
+        title: "Bethsda, MD",
+        text: "Arianne has been an incredible source of support during a very difficult time in my life. Her ability to listen and provide insightful feedback is unparalleled. The EMDR sessions have been transformative, helping me process and heal from past traumas. Arianne’s compassionate and professional approach has truly made a difference in my mental health journey.å",
+        image: woman3
     },
-    {
-        id: 5,
-        name: "Rachel Green",
-        title: "New York, NY",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        image: rachel
-    },
-    {
-        id: 6,
-        name: "Ross Geller",
-        title: "New York, NY",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        image: ross
-    }
+    // {
+    //     id: 5,
+    //     name: "Rachel Green",
+    //     title: "New York, NY",
+    //     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    //     image: rachel
+    // },
+    // {
+    //     id: 6,
+    //     name: "Ross Geller",
+    //     title: "New York, NY",
+    //     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    //     image: ross
+    // }
 ];
   
 export default reviewsData;

@@ -13,7 +13,7 @@ const HelpYou = () => {
                     <div className='flex-1' >
                         <HelpingHand />
                     </div>
-                    <div className='flex-1 text-black leading-loose dark:text-white font-light
+                    <div className='flex-1 text-black leading-relaxed dark:text-white font-light
                                     // xs:-mt-10 
                                     // sm:text-sm sm:-mt-10
                                     // md:text-sm lg:text-sm xl:text-md'

@@ -4,9 +4,21 @@ const SectionSubtitle = ({ subtitle, className }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
-        // This assumes you have a way to detect dark mode, e.g., using a context or a class on the body
-        const darkModeEnabled = document.body.classList.contains('dark');
-        setIsDarkMode(darkModeEnabled);
+        // Function to check and update dark mode status
+        const updateDarkMode = () => {
+            const darkModeEnabled = document.body.classList.contains('dark');
+            setIsDarkMode(darkModeEnabled);
+        };
+
+        // Initial check
+        updateDarkMode();
+
+        // Set up a MutationObserver to watch for changes to the body's class list
+        const observer = new MutationObserver(updateDarkMode);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        // Clean up the observer when the component unmounts
+        return () => observer.disconnect();
     }, []);
 
     // Calculate the width of the underline
@@ -17,10 +29,9 @@ const SectionSubtitle = ({ subtitle, className }) => {
             <h2 className="text-3xl font-semibold text-black relative dark:text-white sm:text-2xl">
                 {subtitle}
             </h2>
-            <div style={{ height: '3px',
-                          background: isDarkMode ? 'var(--underline-color-dark)' : 'var(--underline-color-light)',
-                          width: underlineWidth,
-                }}
+            <div 
+                className={`h-[3px] ${isDarkMode ? 'bg-[var(--underline-color-dark)]' : 'bg-[var(--underline-color-light)]'}`}
+                style={{ width: underlineWidth }}
             ></div>
         </div>
     );
