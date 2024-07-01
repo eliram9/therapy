@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/therapy/static/css/main.ccc47a0e.css",
-    "main.js": "/therapy/static/js/main.9da911dd.js",
+    "main.css": "/therapy/static/css/main.060abe5c.css",
+    "main.js": "/therapy/static/js/main.5b65930d.js",
     "static/media/Ari.svg": "/therapy/static/media/Ari.ce7568c36846210d18ff41fa2f12bf98.svg",
-    "static/media/john.jpeg": "/therapy/static/media/john.54b4b763010f093486f9.jpeg",
+    "static/media/man1.jpg": "/therapy/static/media/man1.1db24095e4b654849e5f.jpg",
     "static/media/ross.jpg": "/therapy/static/media/ross.ac2fadb0cec13d80888d.jpg",
     "static/media/rachel.jpg": "/therapy/static/media/rachel.534cd2312187bdbeb739.jpg",
-    "static/media/dave.jpeg": "/therapy/static/media/dave.9183276040729acdc1db.jpeg",
     "static/media/woman2.jpg": "/therapy/static/media/woman2.8a64ffb3736fedd40ed0.jpg",
+    "static/media/woman3.jpg": "/therapy/static/media/woman3.d24cbec13a58c9ab58b1.jpg",
     "static/media/woman1.jpg": "/therapy/static/media/woman1.1bc1e2ab51a6cdfe898a.jpg",
     "static/media/hero.svg": "/therapy/static/media/hero.f72a944cc80ab52a175a.svg",
     "static/media/contact-bg.svg": "/therapy/static/media/contact-bg.1b79e8a8ea439477ccb4dcb54fe48e70.svg",
     "index.html": "/therapy/index.html",
-    "main.ccc47a0e.css.map": "/therapy/static/css/main.ccc47a0e.css.map",
-    "main.9da911dd.js.map": "/therapy/static/js/main.9da911dd.js.map"
+    "main.060abe5c.css.map": "/therapy/static/css/main.060abe5c.css.map",
+    "main.5b65930d.js.map": "/therapy/static/js/main.5b65930d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc47a0e.css",
-    "static/js/main.9da911dd.js"
+    "static/css/main.060abe5c.css",
+    "static/js/main.5b65930d.js"
   ]
 }
